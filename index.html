@@ -1,58 +1,127 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jade Lopez</title>
+    <meta name="description" content="Portfolio for Jade E Lopez">
+    <meta name="author" content="Jade E Lopez">
+    <title>Jade E Lopez</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/de25aad685.js"></script>
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
 
 </head>
+
 <body>
     <!-- add bootstrap fixed position -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navList">
-            <ul class="navbar-nav mr-auto" >
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList"
+                aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navList">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
                     </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="jumbotron">
-            <div class="header-img">
-                <img src="" alt="">
+                </ul>
             </div>
-            <div class="header-info" class="rounded-circle">
-                <h1>Jade Lopez</h1>
-                <h3>Web Developer, Graphic Designer</h3>
-            </div>
-        </div>
+        </nav>
     </header>
+
+    <main role="main">
+        <!-- need to fix position to the top. covered by nav-bar's fixed positioning -->
+        <!-- Jumbotron -->
+        <section class="header">
+            <div class="jumbotron d-flex flex-column justify-content-center  ">
+                <div class="header-img  mx-auto">
+                    <!-- Placeholder image -->
+                    <a href="https://placeholder.com">
+                        <img src="https://via.placeholder.com/175?text=Jade Lopez" alt="Placeholder image"
+                            class="rounded-circle">
+                    </a>
+                </div>
+                <div class="header-info mx-auto text-center ">
+                    <h1>Jade Lopez</h1>
+                    <h3>Web Developer, Graphic Designer</h3>
+                </div>
+                <div class="btn-group " role="group" aria-label="Button Group">
+                    <button class="btn">Hire Me</button>
+                    <button class="btn">Resume</button>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class=" container mx-auto about" id="about">
+            <div class="card">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>About Me</h1>
+                        <!-- NEED TO EDIT!!!!! -->
+                        <p>I am a Graphic/Web Designer currently studying Full Stack Web Development and <a
+                                class="Lambda" href="https://lambdaschool.com/" target="_blank">Lambda School.</a> I
+                            love to meet new people, immerse myself into creatively charged atmospheres; and love to
+                            find design inspiration in the world around me. It is important to me to constantly push
+                            myself to learn new things and to help so that I may grow as a designer and an individual.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1>Basic Information</h1>
+                        <div class="row">
+                            <!-- May need to adjust column size? -->
+                            <div class="col-lg-6 d-flex flex-column">
+                                <p>Email:</p>
+                                <p>Phone:</p>
+                                <p>Address:</p>
+                            </div>
+                            <div class="col-lg-6 d-flex flex-column">
+                                <p>jadeli1720@gmail.com</p>
+                                <p>(909) 379-4021</p>
+                                <p>3379 Reindeer Circle, Colorado Springs, CO 80922</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="container"></section>
+        <!-- Portfolio -->
+        <section class="container"></section>
+        <!-- Experience -->
+        <section class="container"></section>
+        <!-- Contact -->
+        <section class="container"></section>
+
+    </main>
+    <footer>
+
+    </footer>
+
 
 
 
@@ -63,8 +132,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

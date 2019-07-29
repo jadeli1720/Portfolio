@@ -23,6 +23,35 @@ h5 {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
+/* Navigation */
+
 nav {
   background-color: darkcyan;
+  font-size: 22px;
 }
+
+nav .nav-item {
+  padding: 10px 30px;
+}
+
+.nav-link {
+  color:white;
+  transition: all 0.5s ease-in-out ;
+}
+
+
+.nav-link:hover, .nav-link:active, .nav-link:focus{
+  color: white;
+   opacity: 0.5;
+}
+
+
+/* Footer */
+footer {
+  background: darkcyan;
+  padding-top: 20px;
+}
+
+
+/* Skills */

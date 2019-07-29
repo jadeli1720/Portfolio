@@ -1,10 +1,4 @@
-.transition {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
+/* resets */
 * {
   box-sizing: border-box;
 }
@@ -20,14 +14,57 @@ h2,
 h3,
 h4,
 h5 {
+  color: #1B242F;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
+p{
+  color:  #1B242F;
+}
+/* globals */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn-group {
+  color: white;
+}
+
+.btn {
+  background: #E31B6D;
+  background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
+  border: 1px solid #570124;
+  color: white;
+  margin: 40px 30px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.section-title {
+  background: #00A1A7;
+  background-image: linear-gradient(to right, #00a1a7, #01a7ad, #01adb3, #02b4ba, #03bac0, #03bac0, #03bac0, #03bac0, #02b4ba, #01adb3, #01a7ad, #00a1a7);
+  margin: 0 0 80px;
+  padding: 30px 0;
+  
+}
+
+.card {
+  
+}
+
+
+
 /* Navigation */
 
+header {
+  margin-bottom: 70px;
+}
 nav {
-  background-color: darkcyan;
+  /* Navy: #1B242F Teals: 2793a1 #04C2C9, darkteal:#00A1A7,  Pinks:#FF1A73 */
+  background-color: #00A1A7;
+  border-bottom: 3px solid #E31B6D ;
   font-size: 22px;
 }
 
@@ -35,22 +72,64 @@ nav .nav-item {
   padding: 10px 30px;
 }
 
+.navbar-toggler{
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .nav-link {
   color:white;
-  transition: all 0.5s ease-in-out ;
+  transition: all 0.3s ease-in-out ;
 }
 
 
 .nav-link:hover, .nav-link:active, .nav-link:focus{
-  color: white;
-   opacity: 0.5;
+  color: #E31B6D;
 }
+
+
+/* Jumbotron   Dark Teal:#023E4D*/
+.jumbotron {
+  background: #1B242F;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.jumbotron-img {
+  margin: 20px;
+}
+
+.headshot {
+  border: 3px solid #E31B6D;
+  width: 250px;
+}
+
+.header-info h1 {
+  color: #E31B6D;
+  font-size:60px;
+  margin: 10px 0 5px;
+}
+
+.header-info h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+
 
 
 /* Footer */
 footer {
-  background: darkcyan;
+  background: #1B242F;
+  border-top: 2px solid #E31B6D;
   padding-top: 20px;
+}
+footer p{
+  color: white;
 }
 
 

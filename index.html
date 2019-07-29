@@ -30,7 +30,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navList">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav mx-auto uppercase">
                     <li class="nav-item ">
                         <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -56,30 +56,26 @@
     <main role="main">
         <!-- need to fix position to the top. covered by nav-bar's fixed positioning -->
         <!-- Jumbotron -->
-        <section class="header">
+        <section class="header ">
             <div class="jumbotron d-flex flex-column justify-content-center  ">
-                <div class="header-img  mx-auto">
-                    <!-- Placeholder image -->
-                    <a href="https://placeholder.com">
-                        <img src="https://via.placeholder.com/175?text=Jade Lopez" alt="Placeholder image"
-                            class="rounded-circle">
-                    </a>
+                <div class="jumbotron-img  mx-auto">
+                    <img src="images/headshot.png" alt="Placeholder image" class="rounded-circle headshot">
                 </div>
                 <div class="header-info mx-auto text-center ">
                     <h1>Jade Lopez</h1>
                     <h3>Web Developer, Graphic Designer</h3>
                 </div>
-                <div class="btn-group " role="group" aria-label="Button Group">
-                    <button class="btn">Hire Me</button>
-                    <button class="btn">Resume</button>
+                <div class="mx-auto " role="group" aria-label="Button Group">
+                    <button class="btn uppercase">Hire Me</button>
+                    <button class="btn uppercase">Resume</button>
                 </div>
             </div>
         </section>
         <!-- About Section -->
         <!-- May want to change -->
-        <section class=" container mx-auto mb-5" id="about">
-            <h1 class="text-center my-5">About Me</h1>
-            <div class="card">
+        <section class="  mx-auto mb-5" id="about">
+            <h1 class="text-center mb-5 section-title">About Me</h1>
+            <div class="card container">
                 <div class="row">
                     <div class="col-lg-6">
                         <h2 class="card-title text-center mt-4">Hello!</h2>
@@ -115,11 +111,10 @@
             </div>
         </section>
         <!-- Skills -->
-        <!-- Smaller Icons? flex box styling? -->
-        <section class="container mb-5" id="skills">
-            <h1 class="text-center my-5">Skills</h1>
+        <section class=" mb-5" id="skills">
+            <h1 class="text-center my-5 section-title">Skills</h1>
             <!-- Web Dev -->
-            <div class="card mb-5">
+            <div class=" container card mb-5">
                 <h2 class="card-title text-center my-5"> Web Development</h2>
                 <div class="d-flex justify-content-around flex-wrap">
                     <div class="flex-column text-center m-3">
@@ -149,31 +144,31 @@
                 </div>
             </div>
             <!-- Graphic and Web Software -->
-            <div class="card" id="Software">
+            <div class="container card" id="Software">
                 <h2 class="card-title text-center my-5"> Graphic and Web Software</h2>
                 <div class="d-flex justify-content-around flex-wrap">
                     <div class="flex-column text-center m-3">
-                        <img src="./images/photoshop.png" alt="Placeholder image">
+                        <img src="./images/photoshop.png" alt="Adobe Photoshop logo">
                         <p>Photoshop</p>
                     </div>
                     <div class="flex-column text-center m-3">
-                        <img src="./images/Illustrator.png" alt="Placeholder image">
+                        <img src="./images/Illustrator.png" alt="Adobe Illustrator logo">
                         <p>Illustrator</p>
                     </div>
                     <div class="flex-column text-center m-3">
-                        <img src="./images/indesign.png" alt="Placeholder image">
+                        <img src="./images/indesign.png" alt="Adobe InDesign Logo">
                         <p>InDesign</p>
                     </div>
                     <div class="flex-column text-center m-3">
-                        <img src="./images/dreamweaver.png" alt="Placeholder image">
+                        <img src="./images/dreamweaver.png" alt="Adobe DreamWeaver logo">
                         <p>DreamWeaver</p>
                     </div>
                     <div class="flex-column text-center m-3">
-                        <img src="./images/adobe-xd.png" alt="Placeholder image">
+                        <img src="./images/adobe-xd.png" alt="Adobe XD logo">
                         <p>Adobe XD</p>
                     </div>
                     <div class="flex-column text-center m-3">
-                        <img src="./images/vs_code.png" alt="Placeholder image">
+                        <img src="./images/vs_code.png" alt="Visual Studio Code Logo">
                         <p>VS Code</p>
                     </div>
                 </div>
@@ -181,9 +176,9 @@
             </div>
         </section>
         <!-- Portfolio -->
-        <section class="container mb-5" id="portfolio">
-            <h1 class="text-center my-5">Portfolio</h1>
-            <div class="row">
+        <section class=" mb-5" id="portfolio">
+            <h1 class="text-center my-5 section-title">Portfolio</h1>
+            <div class="container row mx-auto">
                 <div class="col-lg-4">
                     <div class="card">
                         <img src="#" alt="" class="card-img-top" style="background: grey; height: 200px ;">
@@ -225,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class=" container row mt-4 mx-auto">
                 <div class="col-lg-4">
                     <div class="card">
                         <img src="#" alt="" class="card-img-top" style="background: grey; height: 200px ;">
@@ -269,10 +264,10 @@
             </div>
         </section>
         <!-- Experience -->
-        <section class="container mb-5" id="experience">
-            <h1 class="text-center my-5">Experience</h1>
+        <section class=" mb-5" id="experience">
+            <h1 class="text-center my-5 section-title">Experience</h1>
             <!-- Work Experience -->
-            <div class="card">
+            <div class=" container card">
                 <h2 class="text-center mt-5 mb-4">Work Experience</h2>
                 <!-- 1 -->
                 <div class="row no-gutters">
@@ -326,7 +321,7 @@
                 </div>
             </div>
             <!-- School Experience -->
-            <div class="card mt-5">
+            <div class="container card mt-5">
                 <h2 class="text-center mt-5 mb-4">School Experience</h2>
                 <!-- 1 -->
                 <div class="row no-gutters">
@@ -401,9 +396,9 @@
             </div>
         </section>
         <!-- Contact -->
-        <section class="container mb-5" id="contact">
-            <h1 class="text-center my-5">Contact Me</h1>
-            <div class="card ">
+        <section class=" mb-5" id="contact">
+            <h1 class="text-center my-5 section-title">Contact Me</h1>
+            <div class="container card ">
                 <div class="mx-auto mt-5">
                     <p>Have questions or just want to say hello? Drop me a line and I'll get back to you shortly.</p>
                 </div>

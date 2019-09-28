@@ -7,13 +7,22 @@ html {
 }
 html,
 body {
+  background-color: rgb(255, 254, 248);
+  background-image: url("../images/crossword.png");
   height: 100%;
 }
+
+body {
+  position: relative; 
+  font-family: 'Muli', sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
+  font-family: 'Raleway', sans-serif;
   color: #1B242F;
   font-weight: 600;
   letter-spacing: 1px;
@@ -21,6 +30,7 @@ h5 {
 
 p{
   color:  #1B242F;
+  font-size: 18px;
 }
 /* globals */
 .uppercase {
@@ -32,6 +42,7 @@ p{
   color: white;
 }
 
+/* May need to change button so we can have background shift colors on hover */
 .btn {
   background: #E31B6D;
   background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
@@ -41,46 +52,55 @@ p{
   padding: 10px;
   text-transform: uppercase;
   width: 100px;
+  transition: all 0.3s ease-in-out ;
 }
 
 .section-title {
   background: #00A1A7;
-  background-image: linear-gradient(to right, #00a1a7, #01a7ad, #01adb3, #02b4ba, #03bac0, #03bac0, #03bac0, #03bac0, #02b4ba, #01adb3, #01a7ad, #00a1a7);
+  background-image: url("../images/dark_leaf_bkgd.png"), linear-gradient(to right, #00a1a7, #01a7ad, #01adb3, #02b4ba, #03bac0, #03bac0, #03bac0, #03bac0, #02b4ba, #01adb3, #01a7ad, #00a1a7);
   margin: 0 0 80px;
   padding: 30px 0;
-  
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.61);
+     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.61);
+          box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.61);
 }
 
+/* Change Cards to glassy texture? Less box-shadow? */
 .card {
+  background-color: rgb(246, 246, 246);
   -webkit-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
      -moz-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
           box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
 }
 
-.section-margin{
-  margin: 80px auto 130px;
+.card-title{
+  color:#1B242F;
+  border-bottom: rgba(0, 161, 167, 0.185) 1px solid;
+  padding-bottom: 30px;
 }
 
 
+.section-margin{
+  margin: 80px auto 130px;
+}
 
 /* Navigation */
 
 header {
   margin-bottom: 70px;
 }
+
 nav {
   /* Navy: #1B242F Teals: 2793a1 #04C2C9, darkteal:#00A1A7,  Pinks:#FF1A73 */
-  background-color: #00A1A7;
-  border-bottom: 3px solid #E31B6D ;
+  background: #1B242F;
+  background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #1b242f, #182632, #132834);
+  border-bottom: 1.5px solid #E31B6D ;
   font-size: 22px;
   -webkit-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
      -moz-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
           box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
 
-}
-
-nav .nav-item {
-  padding: 10px 30px;
 }
 
 .navbar-toggler{
@@ -92,22 +112,38 @@ nav .nav-item {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav-link {
+nav .nav-item {
+  margin: 10px 50px;
+  transition: all 0.5s ease-in-out ;
+}
+
+.nav-link{
   color:white;
-  transition: all 0.3s ease-in-out ;
+  transition: all 0.5s ease-in-out ;
+  padding: 10px 20px;
 }
 
-
-.nav-link:hover, .nav-link:active, .nav-link:focus{
+.nav-item:active{
   color: #E31B6D;
+  background: #032027bc;
 }
+
+/* #1B242F #14000894*/
+.nav-link:hover{
+  color: #E31B6D;
+  background: #032027bc;
+}
+
 
 
 /* Jumbotron   Dark Teal:#023E4D*/
 .jumbotron {
   background: #1B242F;
+  background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #1b242f, #182632, #132834, #0d2b36, #052d37);
   color: white;
   margin-bottom: 0px;
+  height: 95vh;
 }
 
 .jumbotron-img {
@@ -126,6 +162,7 @@ nav .nav-item {
 }
 
 .header-info h3 {
+  color: white;
   font-size: 30px;
   font-weight: 400;
   margin: 15px 0;
@@ -135,21 +172,222 @@ nav .nav-item {
 
 
 /* Portfolio */
+.card-container {
+	perspective: 1000px;
+	position: relative;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 420px;
+	margin-bottom: 50px;
+}
 
-.portfolio-card {
-  border: 2px solid #E31B6D;
+.flip-card {
+	position: relative;
+	transform-style: preserve-3d;
+	max-width: 390px;
+	width: 100%;
+	height: 420px;
+  transition: all 2s ease;
+}
+
+.flip-card:hover {
+  /* border: 2px solid rgb(1, 131, 136); */
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 420px;
+	background: white;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	-webkit-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
+     -moz-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
+          box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
+	z-index:2;
+}
+
+/* Front Elements */
+.front{
+	transform: rotateY(0deg);
+}
+.front-title {
+  color:#052d37;
+  padding-top: 10px;
 }
 
 .card-img-top {
-  border-bottom: 2px solid #1B242F
+  border-bottom: 1.5px solid #1B242F
+}
+
+.about {
+  font-size: 16px;
+}
+
+/* background: #E31B6D; */
+/* background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e); */
+
+.tech-container{
+  padding-top: 30px;
+}
+
+/* Needs to be softened */
+/* Change this so it doesn't look like buttons pink to...white? */
+.tech-list {
+  background:#E31B6D;
+  color: white;
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.back{
+  transform: rotateY(-180deg);
+  padding:0 15px;
+}
+
+.back h5 {
+  color: #00A1A7
+}
+
+.card-list {
+  text-transform: uppercase;
+}
+
+.card-btn {
+  background: #E31B6D;
+  background-image: radial-gradient( #cf1460, #c00f57, #b20a4e, #a40546);
+  border: 1px solid #570124;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  margin: 30px 40px;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out ;
+}
+
+.card-btn:hover {
+  color:#570124;
+}
+
+
+/* Experience */
+#experience h4{
+  color:rgb(1, 140, 145);
+}
+
+.timeline::before{
+    top: 20%;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 2px;
+    height: 70%;
+    background: rgba(227, 27, 110, 0.205);
+    left: 31%;
+    margin-left: 1.5px;
+}
+
+.fa-briefcase, .fa-graduation-cap {
+  background-color: #E31B6D;
+  color: white;
+  font-size:22px;
+  padding: 20px;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+
+/* Contact */
+#contact {
+  background: #1B242F;
+  background-image: linear-gradient(to top, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to top,  #1b242f, #182632, #132834, #0d2b36, #052d37);
+  padding-bottom: 130px;
+}
+
+.contact-margin{
+  margin-top:150px;
+}
+
+#contact-card {
+  background-color: rgb(255, 254, 248);
+  background-image: url("../images/crossword.png");
+  padding:0;
+}
+
+.form-container {
+  background: #1B242F;
+  background-image: linear-gradient(to top, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to top,  #1b242f, #182632, #132834, #0d2b36, #052d37);
+  -webkit-box-shadow: inset 1px 7px 12px 0px rgba(0,0,0,1);
+     -moz-box-shadow: inset 1px 7px 12px 0px rgba(0,0,0,1);
+          box-shadow: inset 1px 7px 12px 0px rgba(0,0,0,1);
+  margin: 20px;
+  padding: 40px 20px 20px ;
+}
+.inner-form {
+  margin: 40px 0 0px;
+  ;
+}
+
+.form-row {
+  color:white;
+  margin: 0 150px;
+}
+
+.bottom-margin {
+  margin-bottom: 40px;
+}
+
+.form-group label {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+
+.form-group input,.form-group textarea {
+  border-radius: 0;
+  border: 2px white solid;
+  -webkit-box-shadow: inset 2px 6px 12px -6px #0a0a0a;
+     -moz-box-shadow: inset 2px 6px 12px -6px #0a0a0a;
+          box-shadow: inset 2px 6px 12px -6px #0a0a0a;
+}
+
+.contact-btn {
+  background: #E31B6D;
+  background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
+  border: 1px solid #570124;
+  color: white;
+  margin: 60px 20px 50px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 200px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.contact-btn:hover{
+  color: #570124
 }
 
 
 /* Footer */
 footer {
   background: #1B242F;
-  border-top: 2px solid #E31B6D;
-  padding-top: 20px;
+  background-image: linear-gradient(to top, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to top,  #1b242f, #182632, #132834, #0d2b36, #052d37);
+  border-top: 1.5px solid #E31B6D;
+  -webkit-box-shadow: 0px -4px 10px 1px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px -4px 10px 1px rgba(0,0,0,0.75);
+          box-shadow: 0px -4px 10px 1px rgba(0,0,0,0.75);
+  padding: 50px 0;
+  margin: 0px;
 }
 footer p{
   color: white;

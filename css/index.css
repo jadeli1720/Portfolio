@@ -14,7 +14,7 @@ body {
 
 body {
   position: relative; 
-  font-family: 'Muli', sans-serif;
+  /* font-family: 'Muli', sans-serif; */
 }
 
 h1,
@@ -22,7 +22,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   color: #1B242F;
   font-weight: 600;
   letter-spacing: 1px;
@@ -87,7 +87,7 @@ p{
 /* Navigation */
 
 header {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 nav {
@@ -104,11 +104,21 @@ nav {
 }
 
 .navbar-toggler{
-  border-color: white;
+  border-color: #E31B6D;
   margin: 10px 0;
+  transition: all 0.5s ease-in-out ;
 }
 
 .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(227,27,109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  transition: all 0.5s ease-in-out ;
+}
+
+.navbar-toggler:hover{
+  border-color: white;
+}
+
+.navbar-toggler-icon:hover{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -152,7 +162,7 @@ nav .nav-item {
 
 .headshot {
   border: 3px solid #E31B6D;
-  width: 250px;
+  width: 225px;
 }
 
 .header-info h1 {
@@ -161,11 +171,12 @@ nav .nav-item {
   margin: 10px 0 5px;
 }
 
-.header-info h3 {
+.header-info h4 {
   color: white;
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: 400;
-  margin: 15px 0;
+  line-height: 36px;
+  margin: 20px 0;
 }
 
 /* Skills */
@@ -217,7 +228,7 @@ nav .nav-item {
 }
 .front-title {
   color:#052d37;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .card-img-top {

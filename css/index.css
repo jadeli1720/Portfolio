@@ -48,11 +48,22 @@ p{
   background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
   border: 1px solid #570124;
   color: white;
+  cursor: pointer;
   margin: 40px 30px;
   padding: 10px;
   text-transform: uppercase;
   width: 100px;
   transition: all 0.3s ease-in-out ;
+
+}
+
+.button-container{
+  color:white;
+  
+}
+
+.button-container:hover{
+  color: #570124
 }
 
 .section-title {
@@ -183,91 +194,7 @@ nav .nav-item {
 
 
 /* Portfolio */
-.card-container {
-	perspective: 1000px;
-	position: relative;
-	transform-style: preserve-3d;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 50px;
-}
 
-.flip-card {
-	position: relative;
-	transform-style: preserve-3d;
-	max-width: 390px;
-	width: 100%;
-	height: 420px;
-  transition: all 2s ease;
-}
-
-.flip-card:hover {
-  /* border: 2px solid rgb(1, 131, 136); */
-  transform: rotateY(180deg);
-}
-
-.front,
-.back {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 420px;
-	background: white;
-	backface-visibility: hidden;
-	transform-style: preserve-3d;
-	-webkit-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
-     -moz-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
-          box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
-	z-index:2;
-}
-
-/* Front Elements */
-.front{
-	transform: rotateY(0deg);
-}
-.front-title {
-  color:#052d37;
-  padding-top: 50px;
-}
-
-.card-img-top {
-  border-bottom: 1.5px solid #1B242F
-}
-
-.about {
-  font-size: 16px;
-}
-
-/* background: #E31B6D; */
-/* background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e); */
-
-.tech-container{
-  padding-top: 30px;
-}
-
-/* Needs to be softened */
-/* Change this so it doesn't look like buttons pink to...white? */
-.tech-list {
-  background:#E31B6D;
-  color: white;
-  font-size: 14px;
-  margin: 5px;
-  padding: 5px 10px;
-}
-
-.back{
-  transform: rotateY(-180deg);
-  padding:0 15px;
-}
-
-.back h5 {
-  color: #00A1A7
-}
-
-.card-list {
-  text-transform: uppercase;
-}
 
 .card-btn {
   background: #E31B6D;
@@ -282,9 +209,7 @@ nav .nav-item {
   transition: all 0.3s ease-in-out ;
 }
 
-.card-btn:hover {
-  color:#570124;
-}
+
 
 
 /* Experience */
@@ -383,10 +308,6 @@ nav .nav-item {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
-.contact-btn:hover{
-  color: #570124
-}
-
 
 /* Footer */
 footer {
@@ -397,10 +318,11 @@ footer {
   -webkit-box-shadow: 0px -4px 10px 1px rgba(0,0,0,0.75);
      -moz-box-shadow: 0px -4px 10px 1px rgba(0,0,0,0.75);
           box-shadow: 0px -4px 10px 1px rgba(0,0,0,0.75);
-  padding: 50px 0;
+  padding: 20px 0 ;
   margin: 0px;
 }
 footer p{
   color: white;
 }
+
 

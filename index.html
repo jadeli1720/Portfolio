@@ -22,14 +22,15 @@
 </head>
 
 <body >
-    <!-- smooth scrolling especially when navigating -->
+    <!-- Navigation-->
     <header id="main">
-        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top" >
+            <!-- Hamburger Icon  -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList"
                 aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- NavBar -->
             <div class="collapse navbar-collapse" id="navList">
                 <ul class="navbar-nav mx-auto mb-2 uppercase">
                     <li class="nav-item active">
@@ -56,7 +57,7 @@
     </header>
     <main role="main">
         <!-- Jumbotron -->
-        <!-- Adjust h4 header to eveything else including the buttons -->
+        <!-- Adjust h4 header to everything else including the buttons -->
         <section class="header ">
             <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center  ">
                 <div class="jumbotron-img  mx-auto">
@@ -66,11 +67,15 @@
                     <h1>Jade Lopez</h1>
                     <h4>Full Stack Web Developer <br> &amp; <br> Web Designer</h4>
                 </div>
-                <div class="mx-auto " role="group" aria-label="Button Group">
+                <div class="mx-auto d-flex flex-row " role="group" aria-label="Button Group">
                     <!-- Button Goes to Contact Form? -->
-                    <button class="btn uppercase">Hire Me</button>
+                    <div class="button-container">
+                        <a class="btn uppercase ">Hire Me</a>
+                    </div>
                     <!-- Button needs to go to either separate page for resume or pdf most likely resume page -->
-                    <button class="btn uppercase">Resume</button>
+                    <div class="button-container">
+                        <a class="btn uppercase">Resume</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,276 +187,101 @@
 
         </section>
         <!-- Portfolio -->
-        <!-- styling adjustments -->
-        <!-- Button to see more projects? maybe not -->
+        <!-- Change Pictures? logos with picture background? -->
         <!-- Nasa project once we have data picker working -->
         <!-- Add works were you go above and beyond stretch -->
         <section class=" mb-5" id="portfolio">
             <h1 class="text-center my-5 section-title">Portfolio</h1>
             <div class="section-margin">
-                <div class="container row mx-auto">
-                    <!-- 1. African Marketplace -->
-                    <!-- 2. sleepmood -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/sleepmood.png"
-                                        alt="Free codecademy Landing page project" ">
-                                    <div class=" card-body">
-                                        <h4 class="front-title text-center">sleepmood</h4>
-                                        <!-- Rather Empty?!?!? -->
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class=" card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Front End Developer</li>
-                                                <li>React</li>
-                                                <li>React Library</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Web app that helps users to record, analyze, and improve upon their sleeping habits by recording their sleep time and daily moods.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a href="https://sleepmood.netlify.com/" target="_blank" class="card-btn">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/buildweek-sleeptracker/front-end" target="_blank"
-                                                class="card-btn">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                    <!-- 3. Rick & Morty  -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/rickMorty.png"
-                                    alt="React App that uses a Rick and Morty API">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Rick & Morty Universe</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Front End Developer</li>
-                                                <li>React</li>
-                                                <li>React Redux</li>
-                                                <li>React Library</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Fun React-Redux app that fetched data  inside an async action creator from the Rick and Morty API.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a class="card-btn" href="https://rickmortyuniverse.now.sh/" target="_blank">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/jadeli1720/React-Redux-App-2" target="_blank"
-                                                class="card-btn">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                    <!-- 4.  Wedding Gram -->
-                    <!-- Need to fix some of the site links -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/buildWeekOne.png"
-                                    alt="Free codecademy Landing page project" ">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Wedding Gram</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class=" card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>UI Development</li>
-                                                <li>HTML</li>
-                                                <li>Javascript</li>
-                                                <li>Less</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about"> Responsive marketing page promoting the Wedding Gram App.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a href="https://weddingram.netlify.com/" target="_blank" class="card-btn">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/jadeli1720/buildweekone-Wedding-Gram" target="_blank"
-                                                class="card-btn">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>   
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                </div>
-                <div class=" container row mt-4 mx-auto">
-                    <!--5. Bella Tea Room -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/landingPage.png"
-                                    alt="Free codecademy Landing page project">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Bella Tea Room</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Responsive Design</li>
-                                                <li>Bootstrap</li>
-                                                <li>Css3</li>
-                                                <li>jQuery</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Crafted a Product Landing Page for one of freeCodeCamp’s ‘Responsive Web Design’ projects.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a class="card-btn" href="https://codepen.io/jadeli1720/full/XwzPed" target="_blank">
-                                                <i class="fab fa-codepen"></i>
-                                            </a>
-                                            <!-- <a href="" class="btn">GitHub</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                    <!-- 6. 5150whips -->
-                    <!-- Free domain is not working. Will need to change sites -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/5150whips.png" alt="5150Whips Web Page">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">5150Whips</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Web Design</li>
-                                                <li>Bootstrap</li>
-                                                <li>Css3</li>
-                                                <li>javaScript</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Redesigned website for 5150Whips off-road LED company.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center" role="group"
-                                            aria-label="Button Group">
-                                            <a href="http://5150whips.co.nf/" target="_blank" class="card-btn">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <!-- <a href="" class="btn">GitHub</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                    <!-- 7. Survey Form GET RID OF!!!!!!!! -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/surveyForm.png" alt="Survey form picture from codepen.">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Survey Form</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Responsive Design</li>
-                                                <li>Bootstrap</li>
-                                                <li>Css3</li>
-                                                <li>jQuery</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Created a Survey Form for one of freeCodeCamp’s ‘Responsive Web Design’ projects.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <!-- codepen icon -->
-                                            <a href="" class="card-btn">
-                                                <i class="fab fa-codepen"></i>
-                                            </a>
-                                            <!-- <a href="" class="btn">GitHub</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                </div>
+                <div class="container row  mx-auto">
+                    <!-- 1. SafeMothers -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/safeMothers.png"
+                                    alt="Safe Mothers Web app picture" ">
+                                <div class="overlay">
+                                    <h4 class="text-center">Safe Mothers</h4>
 
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- 2. African Marketplace -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/africanMarket.gif"
+                                    alt="African Marketplace Log in page picture" ">
+                                <div class="overlay">
+                                    <h4 class=" text-center">African Marketplace</h4>
+                                    <!-- Rather Empty?!?!? -->
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- 3. sleepmood -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/sleepmood.png"
+                                    alt="sleepmood app market page picture" ">
+                                <div class=" overlay">
+                                    <h4 class=" text-center">sleepmood</h4>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- 4. Rick & Morty  -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/rickMorty.png"
+                                alt="React App that uses a Rick and Morty API">
+                                <div class="overlay">
+                                    <h4 class=" text-center">Rick & Morty Universe</h4>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- 5.  Wedding Gram -->
+                    <!-- Need to fix some of the site links -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/buildWeekOne.png"
+                                alt="Wedding Gram marketing page picture" >
+                                <div class="overlay">
+                                    <h4 class=" text-center">Wedding Gram</h4>
+                                </div>
+                            </div> 
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!--6. Bella Tea Room -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/landingPage.png"
+                                alt="Free codecademy Landing page project">
+                                <div class="overlay">
+                                    <h4 class=" text-center">Bella Tea Room</h4>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- 7. 5150whips -->
+                    <!-- Free domain is not working. Will need to change hosting sites -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/5150whips.png" alt="5150Whips Landing Page picture">
+                                <div class="overlay">
+                                    <h4 class=" text-center">5150Whips</h4>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>           
+                </div>
             </div>
         </section>
         <!-- Experience -->
@@ -673,7 +503,7 @@
                                 </div>
                             </div>
                             <div class="button-container d-flex justify-content-center">
-                                <button class="contact-btn" type="Submit"><a>Submit</a></button>
+                                <a class="contact-btn text-center" type="Submit">Submit</a>
                             </div>
                         </form>
                     </div>

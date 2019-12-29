@@ -79,9 +79,9 @@ p{
 /* Change Cards to glassy texture? Less box-shadow? */
 .card {
   background-color: rgb(246, 246, 246);
-  -webkit-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
-     -moz-box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
-          box-shadow: 0px 7px 12px 1px rgba(0,0,0,0.47);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.47);
+     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.47);
+          box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.47);
 }
 
 .card-title{
@@ -195,6 +195,9 @@ nav .nav-item {
 
 /* Portfolio */
 
+.port {
+  margin: 10px 0px 20px;
+}
 
 .card-btn {
   background: #E31B6D;

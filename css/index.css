@@ -14,7 +14,6 @@ body {
 
 body {
   position: relative; 
-  /* font-family: 'Muli', sans-serif; */
 }
 
 h1,
@@ -22,15 +21,19 @@ h2,
 h3,
 h4,
 h5 {
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Rosario', sans-serif;
   color: #1B242F;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 p{
   color:  #1B242F;
+  font-family: 'Setimo','Open Sans', sans-serif;
   font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  line-height: 30px;
 }
 /* globals */
 .uppercase {
@@ -178,8 +181,15 @@ nav .nav-item {
 
 .header-info h1 {
   color: #E31B6D;
-  font-size:60px;
+  font-family: 'Setimo','Open Sans', sans-serif;
+  font-size:70px;
+  font-weight: 400;
   margin: 10px 0 5px;
+}
+
+.header-info span {
+  color: white;
+  font-size:45px;
 }
 
 .header-info h4 {
@@ -257,10 +267,23 @@ nav .nav-item {
   text-transform: uppercase;
   text-align: center;
   position: relative;
+  font-family: 'Setimo','Open Sans', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   background-color: transparent;
   color: #FFF;
-  padding: 40px 0 15px;
+  padding: 30px 0 0px;
+}
+
+.hovereffect h6 {
+  /* text-transform: uppercase; */
+  text-align: center;
+  position: relative;
+  font-family: 'Setimo','Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: transparent;
+  color: #FFF;
 }
 
 .hovereffect a {
@@ -281,7 +304,7 @@ nav .nav-item {
 
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  margin-top: 30px;
+  margin-top: 32px;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -290,7 +313,7 @@ nav .nav-item {
   transform: translate3d(0,100%,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h4, .hovereffect:hover h6 {
   
   opacity: 1;
   filter: alpha(opacity=100);

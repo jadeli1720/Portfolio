@@ -14,6 +14,7 @@ body {
 
 body {
   position: relative; 
+  /* overflow: auto !important; */
 }
 
 h1,
@@ -98,6 +99,10 @@ p{
   margin: 80px auto 130px;
 }
 
+.no-pad{
+  padding: 0px;
+}
+
 /* Navigation */
 
 header {
@@ -152,10 +157,14 @@ nav .nav-item {
   background: #032027bc;
 }
 
-/* #1B242F #14000894*/
+/* #1B242F */
 .nav-link:hover{
   color: #E31B6D;
   background: #032027bc;
+}
+
+.active a {
+  color: #E31B6D;
 }
 
 
@@ -210,7 +219,7 @@ nav .nav-item {
 }
 
 /*Pink Colors #cf1460, #c00f57, #b20a4e, #a40546, #96013e */
-/*  */
+/*Teal Colors #00a1a7, #01a7ad, #01adb3, #02b4ba, #03bac0  */
 .hovereffect {
   background-color: #cf1460;
   width: 100%;
@@ -227,7 +236,7 @@ nav .nav-item {
 .hovereffect .overlay {
   background: rgba(0, 0, 0, 0.6); 
   position: absolute;
-  border: 1px solid #FFF;
+  border: 1px solid #00a1a7;
   overflow: hidden;
   width: 80%;
   height: 80%;
@@ -253,7 +262,7 @@ nav .nav-item {
   display: block;
   position: relative;
   -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+          transition: all 0.35s;
 }
 
 .hovereffect:hover img {
@@ -286,34 +295,36 @@ nav .nav-item {
   color: #FFF;
 }
 
-.hovereffect a {
-  /* text-transform: uppercase; */
+.hovereffect button {
   background: rgba(0, 0, 0, 0.6); 
-  border:0.1px solid  #e6feff;
+  border:0.1px solid  #55f9ff88;
   font-size: 14px;
   padding: 5px 15px;
-  transition: all 0.3s ease-in-out ;
+  color: #FFF;
+  margin-top: 15px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s, all 0.3s ease-in-out ;
+          transition: opacity 0.35s, transform 0.35s, all 0.3s ease-in-out ;
+  -webkit-transform: translate3d(0,100%,0);
+          transform: translate3d(0,100%,0);
 }
-
-.hovereffect a:hover {
+/* May get rid of box shadow. Simplify? */
+.hovereffect button:hover {
+  border: 0.1px solid  #b8fdff;
   color: #02f7ff;
   -webkit-box-shadow: 0px 0px 7px  #affcff;
+     -moz-box-shadow: 0px 0px 7px  #affcff;
+          box-shadow: 0px 0px 7px  #affcff;
   transition: all 0.3s ease-in-out ;
   
 }
 
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  margin-top: 32px;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-          transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
+.hovereffect button:focus {
+  outline: none;
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h4, .hovereffect:hover h6 {
+.hovereffect:hover button, .hovereffect:hover h4, .hovereffect:hover h6 {
   
   opacity: 1;
   filter: alpha(opacity=100);
@@ -321,6 +332,70 @@ nav .nav-item {
   -webkit-transform: translate3d(0,0,0);
           transform: translate3d(0,0,0);
 }
+
+
+/* Modal Styles */
+.modal{ 
+  overflow: hidden; 
+}
+.modal-header{
+  border-bottom: 1px solid rgba(0, 161, 167, 0.281);
+}
+
+.modal-body{
+  background-color: #1b242f;
+  overflow-x: hidden;
+  padding: 0 16px;
+}
+.modal-rel{
+  position: absolute; 
+  bottom: 0; 
+  right:0; 
+  left: auto; 
+  top: auto; 
+  bottom: 0; 
+    
+}
+.modal-container {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  background-color: white;
+  /* padding: 40px 0; */
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tech-list {
+  /* list-style: none; */
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0, 161, 167, 0.281);
+}
+
+.modal-btn {
+  background: #E31B6D;
+  background-image: radial-gradient( #cf1460, #c00f57, #b20a4e, #a40546);
+  border: 1px solid #570124;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out ;
+}
+
+.after_modal_appended {  
+  position: relative;
+}
+
 
 
 /* Experience */
@@ -435,5 +510,4 @@ footer {
 footer p{
   color: white;
 }
-
 

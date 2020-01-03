@@ -207,13 +207,73 @@
                                 <img class="card-img-top" src="images/safeMothers.png"
                                     alt="Safe Mothers Web app picture" ">
                                 <div class="overlay">
-                                    <h4 class="text-center">Safe Mothers</h4>
+                                    <h4 class="text-center">Riders For Life</h4>
                                     <h6 class="text-center">Full Stack</h6>
-                                    <p class="btn-port text-center"><a href="#">Learn More</a href="#"></p>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#sfmModal">Learn More</button>
                                 </div>
                             </div>
                         </div><!-- Card Ends -->
                     </div>
+                    <!-- a. SafeMothers Modal -->
+                    <div class="modal modal-rel fade" id="sfmModal" tabindex="-1" role="dialog" aria-labelledby="safeMothersLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="safeMothersLabel">Riders For Life - Backend Developer</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <iframe width="720" height="405" src="https://www.youtube.com/embed/KM4jNYUOg7Y?color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Admin Dashboard & Medical Emergency SMS System</h6>
+                                                <p>Riders For Life was an 8 week Labs team project built for the non-profit Safe Mothers, Safe Babies based out of Uganda. Working with a team of 9 other Lambda students, I primarily focused on building the backend database and integrating Frontline SMS into the medical emergency SMS system. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Node</li>
+                                                            <li>Express</li>
+                                                            <li>PostgreSQL</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Frontline SMS</li>
+                                                            <li>Geolib</li>
+                                                            <li>Fuse.js</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="modal-btn"></button>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+                    
                     <!-- 2. African Marketplace -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -223,11 +283,13 @@
                                 <div class="overlay">
                                     <h4 class=" text-center">African Marketplace</h4>
                                     <h6 class="text-center">Back End</h6>
-                                    <p class="btn-port text-center"><a href="#">Learn More</a></p>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#afMarket">Learn More</button>
                                 </div>
                             </div>
                         </div><!-- Card Ends -->
                     </div>
+                    <!-- b. African Marketplace Modal -->
+                    
                     <!-- 3. sleepmood -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -302,6 +364,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Experience -->
         <section class=" mb-5" id="experience">
             <h1 class="text-center my-5 section-title">Experience</h1>

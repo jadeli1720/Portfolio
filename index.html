@@ -62,7 +62,6 @@
     </header>
     <main role="main">
         <!-- Jumbotron -->
-        <!-- Adjust h4 header to everything else including the buttons -->
         <section class="header ">
             <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center  ">
                 <div class="jumbotron-img  mx-auto">
@@ -84,6 +83,7 @@
                 </div>
             </div>
         </section>
+
         <!-- About Section -->
         <!-- May want to change. Put basic info at the bottom in contact area? -->
         <section class="mx-auto mb-5" id="about">
@@ -122,6 +122,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Skills -->
         <!-- Need to add node.js , python, and django -->
         <section class=" mb-5" id="skills">
@@ -191,8 +192,9 @@
             </div>
 
         </section>
+
         <!-- Portfolio -->
-        <!-- CHANGE IMAGES!! ==> logos with picture backgrounds or website on laptop or phone -->
+        <!-- CHANGE IMAGES!! ==> cards: logos with picture backgrounds or website on laptop or phone...modals need some sort of images as well or do videos -->
         <!-- Nasa project once we have data picker working -->
         <!-- Add works were you go above and beyond stretch -->
         <!-- Create pages for each work and don't forget to add github and demo code with buttons -->
@@ -220,7 +222,7 @@
                             <div class="modal-content">
                                 <!-- Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title" id="safeMothersLabel">Riders For Life - Backend Developer</h4>
+                                    <h4 class="modal-title" id="safeMothersLabel">Riders For Life</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -246,16 +248,21 @@
                                                 <div class="row">
                                                     <div class="col-md-6 no-pad">
                                                         <ul class="tech-list">
-                                                            <li>Node</li>
-                                                            <li>Express</li>
-                                                            <li>PostgreSQL</li>
+                                                            <li class="list-title">Frontend</li>
+                                                            <li>React</li>
+                                                            <li>Redux</li>
+                                                            <li>grommet</li>
+                                                            <li>priceline-design-system</li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-6 no-pad">
                                                         <ul class="tech-list">
+                                                            <li class="list-title">Backend</li>
                                                             <li>Frontline SMS</li>
+                                                            <li>Node</li>
+                                                            <li>Express</li>
+                                                            <li>PostgreSQL</li>
                                                             <li>Geolib</li>
-                                                            <li>Fuse.js</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -264,11 +271,13 @@
                                     </div><!--End modal-container-->
                                 </div> <!--End Body-->
                                 <!-- Footer -->
-                                <div class="modal-footer">
-                                    <a class="modal-btn">
-                                        <i class="fas fa-external-link-alt"></i>
+                                <div class="modal-footer ">
+                                    <a class="modal-btn mr-4" href="https://github.com/Lambda-School-Labs/safe-mothers-fe" target="blank">
+                                        <i class="fab fa-react"></i>
                                     </a>
-                                    <button class="modal-btn"></button>
+                                    <a class="modal-btn" href="https://github.com/Lambda-School-Labs/safe-mothers-be" target="blank">
+                                        <i class="fab fa-node-js"></i>
+                                    </a>
                                 </div> <!--End Footer-->
                             </div> <!--End Modal Content-->
                         </div>
@@ -289,7 +298,68 @@
                         </div><!-- Card Ends -->
                     </div>
                     <!-- b. African Marketplace Modal -->
-                    
+                    <div class="modal modal-rel fade" id="afMarket" tabindex="-1" role="dialog" aria-labelledby="africanMarketLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="africanMarketLabel">African Marketplace</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/africanMarket.gif" alt="">
+                                            </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">RESTful API & Authentication</h6>
+                                                <p>A week long team project, the African Marketplace App allows African merchants to upload products for sale and view the prices offered by other merchants. As the backend developer, I created a RESTful API that allowed for Registration and Login, held a collection of products and relevant pricing, and allowed for CRUD operations to be performed. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Node</li>
+                                                            <li>Express</li>
+                                                            <li>Knex.js</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Helmet</li>
+                                                            <li>supertest</li>
+                                                            <li>PostgreSQL</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/Build-week-African-Marketplace/Back-End" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://front-end.bw-african-marketplace.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
+
                     <!-- 3. sleepmood -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -299,11 +369,75 @@
                                 <div class=" overlay">
                                     <h4 class=" text-center">sleepmood</h4>
                                     <h6 class="text-center">Front End</h6>
-                                    <p class="btn-port text-center"><a href="#">Learn More</a></p>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#slpMood">Learn More</button>
                                 </div>
                             </div>
                         </div><!-- Card Ends -->
                     </div>
+                    <!-- c. sleepmood -->
+                    <div class="modal modal-rel fade" id="slpMood" tabindex="-1" role="dialog" aria-labelledby="sleepMoodeLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="sleepMoodeLabel">sleepmood</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/sleepmood.png" alt="">
+                                            </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Sleep Tracker Application</h6>
+                                                <p>The sleepmood app was created so users could determine how many hours of sleep is best for them through tracking their moods. Users track/record the amount of sleep, their moods before/after sleep, as well as there overall mood for that day. This single sleep entry is collated and used to create Data Visualizations over a weekly and daily view. Once a week of data has been collected, the app will start to give the user the recommended hours of sleep the user needs to be at their best. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>React</li>
+                                                            <li>React-vis</li>
+                                                            <li>React-dom</li>
+                                                            <li>React-calender</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Axios</li>
+                                                            <li>Formik</li>
+                                                            <li>Semantic-ui</li>
+                                                            <li>Styled Components</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/buildweek-sleeptracker/front-end" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://sleepmood.leananeparidze.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
                     <!-- 4. Rick & Morty  -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -313,11 +447,74 @@
                                 <div class="overlay">
                                     <h4 class=" text-center">Rick & Morty Universe</h4>
                                     <h6 class="text-center">Front End</h6>
-                                    <p class="btn-port text-center"><a href="#">Learn More</a></p>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#rickMorty">Learn More</button>
                                 </div>
                             </div>
                         </div><!-- Card Ends -->
                     </div>
+                    <!-- c. sleepmood -->
+                    <div class="modal modal-rel fade" id="rickMorty" tabindex="-1" role="dialog" aria-labelledby="rickMortyLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="rickMortyLabel">Rick & Morty Universe</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/rickMorty.png" alt="">
+                                            </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Using RESTful API's & Redux</h6>
+                                                <p>The application was created to demonstrate and practice using asynchronous action creators in Redux by returning data from an API of my choice. I chose to use the <a href="https://rickandmortyapi.com/" target="_blank" >Rick and Morty</a> API to create the Rick & Morty Universe app; which displays character, location, and episodic data from it. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>React</li>
+                                                            <li>Redux</li>
+                                                            <li>Redux-thunk</li>
+                                                            <li>React-loader-spinner</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Axios</li>
+                                                            <li>Semantic-ui</li>
+                                                            <li>Styled Components</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/jadeli1720/React-Redux-App-2" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://rickmortyuniverse.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
                     <!-- 5.  Wedding Gram -->
                     <!-- Need to fix some of the site links -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
@@ -547,6 +744,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Contact -->
         <!-- FIX STYLING ASAP : class? picture background? address moves down here to the left then contact on the right-->
         <section id="contact">
@@ -584,7 +782,7 @@
                                 </div>
                             </div>
                             <div class="button-container d-flex justify-content-center">
-                                <a class="contact-btn text-center" type="Submit">Submit</a>
+                                <a class="btn text-center" type="Submit">Submit</a>
                             </div>
                         </form>
                     </div>

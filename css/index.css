@@ -57,7 +57,8 @@ p{
   padding: 10px;
   text-transform: uppercase;
   width: 100px;
-  transition: all 0.3s ease-in-out ;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out ;
 
 }
 
@@ -343,7 +344,9 @@ nav .nav-item {
 }
 
 .modal-body{
-  background-color: #1b242f;
+  background: #1B242F;
+  background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #1b242f, #182632, #132834, #0d2b36, #052d37);
   overflow-x: hidden;
   padding: 0 16px;
 }
@@ -363,7 +366,6 @@ nav .nav-item {
 
 .text {
   background-color: white;
-  /* padding: 40px 0; */
 }
 
 .text p {
@@ -371,25 +373,32 @@ nav .nav-item {
   line-height: 22px;
 }
 
-.tech-list {
-  /* list-style: none; */
+.list-title {
+  font-weight: 600;
+  list-style: none;
+  text-decoration: underline;
 }
 
 .modal-footer {
   border-top: 1px solid rgba(0, 161, 167, 0.281);
 }
 
-.modal-btn {
+.modal-btn i {
   background: #E31B6D;
   background-image: radial-gradient( #cf1460, #c00f57, #b20a4e, #a40546);
   border: 1px solid #570124;
   border-radius: 50%;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   cursor: pointer;
+  margin-right: 10px ;
   padding: 15px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out ;
+}
+
+.modal-btn:hover{
+  color: #570124;
 }
 
 .after_modal_appended {  
@@ -479,19 +488,6 @@ nav .nav-item {
   -webkit-box-shadow: inset 2px 6px 12px -6px #0a0a0a;
      -moz-box-shadow: inset 2px 6px 12px -6px #0a0a0a;
           box-shadow: inset 2px 6px 12px -6px #0a0a0a;
-}
-
-.contact-btn {
-  background: #E31B6D;
-  background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
-  border: 1px solid #570124;
-  color: white;
-  margin: 60px 20px 50px;
-  padding: 10px;
-  text-transform: uppercase;
-  width: 200px;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
 }
 
 

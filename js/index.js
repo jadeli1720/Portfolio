@@ -27,27 +27,32 @@ $(window).scroll(function() {
     
   })
 
-  /** 3. Modal -- Trying to reposition modal. On click moves to top then back down to portfolio. FIX!!!!
+  /** 3. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, everyother modal has slight page movement
  **************************************************************** **/	
 // Not a great solution. Look for something else
   
   $("body").on("click",".modalClick",function(){
     
-    $("#sfmModal").modal("show");
+    // data-target id that corresponds to the matching modal id
+    let modalBtn = $(this.id)
+    
+    modalBtn.modal("show");
     $("#portfolio").addClass("after_modal_appended");
   
-  
-    //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
+    //removes the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
     $('body').removeClass("modal-open")
       $('body').css("padding-right","");     
 });
 
-// Stops video from playing once modal is closed
-$('#sfmModal').on('hidden.bs.modal', function() {
-  $('#sfmModal .modal-body').html('');
+
+// Stops video from playing once modal is closed 
+$('#sfmModal').on('hidden.bs.modal', function(e) {
+  $('#sfmModal iframe').attr("src", $('#sfmModal iframe').attr('src'));
 });
+
+
 
 })
 
 //Below will allow me to keep modal open and design it. Just change the modal id
-// $('#sfmModal').modal('toggle')
+$('#rickMorty').modal('toggle')

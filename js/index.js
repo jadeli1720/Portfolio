@@ -55,4 +55,4 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
 })
 
 //Below will allow me to keep modal open and design it. Just change the modal id
-// $('#rickMorty').modal('toggle')
+$('#fiftyWhips').modal('toggle')

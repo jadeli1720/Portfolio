@@ -379,6 +379,10 @@ nav .nav-item {
   text-decoration: underline;
 }
 
+.tech-list {
+  list-style: outside;
+}
+
 .modal-footer {
   border-top: 1px solid rgba(0, 161, 167, 0.281);
 }

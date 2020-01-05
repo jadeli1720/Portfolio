@@ -1,17 +1,13 @@
 $(document).ready(function() {
 
-/** 1#. Scrollspy -- not working 
- **************************************************************** **/	
 
-    // $('body').scrollspy({ target: '#navList', offset: 10 })
-
-/** 2#. Smooth Scrolling
+/** 1. Smooth Scrolling
  **************************************************************** **/	
 let scroll = new SmoothScroll('a[href*="#"]', {offset: 30,speed:800});
 
 
 
-/** 3#. Active Link -- not working
+/** 2. Active Link -- not working -- skips experience??
  **************************************************************** **/	
 $(window).scroll(function() {
     
@@ -21,14 +17,42 @@ $(window).scroll(function() {
 
     scrollLink.each(function() {
       
-      let sectionOffset = $(this.hash).offset().top - 20;
+      let sectionOffset = $(this.hash).offset().top - 325;
       
       if ( sectionOffset <= scrollbarLocation ) {
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
+        $(this).parent().addClass('active') ;
+        $(this).parent().siblings().removeClass('active') ;
       }
     })
     
   })
 
+  /** 3. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, everyother modal has slight page movement
+ **************************************************************** **/	
+// Not a great solution. Look for something else
+  
+  $("body").on("click",".modalClick",function(){
+    
+    // data-target id that corresponds to the matching modal id
+    let modalBtn = $(this.id)
+    
+    modalBtn.modal("show");
+    $("#portfolio").addClass("after_modal_appended");
+  
+    //removes the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
+    $('body').removeClass("modal-open")
+      $('body').css("padding-right","");     
+});
+
+
+// Stops video from playing once modal is closed 
+$('#sfmModal').on('hidden.bs.modal', function(e) {
+  $('#sfmModal iframe').attr("src", $('#sfmModal iframe').attr('src'));
+});
+
+
+
 })
+
+//Below will allow me to keep modal open and design it. Just change the modal id
+$('#fiftyWhips').modal('toggle')

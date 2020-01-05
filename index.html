@@ -17,19 +17,25 @@
     <script src="https://kit.fontawesome.com/de25aad685.js"></script>
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-
+    <!-- Fonts: -->
+    <!-- Adobe: Setimo -->
+    <link rel="stylesheet" href="https://use.typekit.net/ehf7hxx.css">
+    <!-- Google: Rosario -->
+    <link href="https://fonts.googleapis.com/css?family=Rosario:400,500,600,700&display=swap" rel="stylesheet">
+    
+    
 </head>
 
 <body >
-    <!-- smooth scrolling especially when navigating -->
+    <!-- Navigation-->
     <header id="main">
-        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top" >
+            <!-- Hamburger Icon  -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList"
                 aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- NavBar -->
             <div class="collapse navbar-collapse" id="navList">
                 <ul class="navbar-nav mx-auto mb-2 uppercase">
                     <li class="nav-item active">
@@ -62,17 +68,22 @@
                     <img src="images/headshot.png" alt="Placeholder image" class="rounded-circle headshot">
                 </div>
                 <div class="header-info mx-auto text-center ">
-                    <h1>Jade Lopez</h1>
-                    <h3>Web Developer, Graphic Designer</h3>
+                    <h1>J<span class="uppercase">ade</span> L<span class="uppercase">opez</span></h1>
+                    <h4>Full Stack Web Developer <br> &amp; <br> Web Designer</h4>
                 </div>
-                <div class="mx-auto " role="group" aria-label="Button Group">
+                <div class="mx-auto d-flex flex-row " role="group" aria-label="Button Group">
                     <!-- Button Goes to Contact Form? -->
-                    <button class="btn uppercase">Hire Me</button>
+                    <div class="button-container">
+                        <a class="btn uppercase ">Hire Me</a>
+                    </div>
                     <!-- Button needs to go to either separate page for resume or pdf most likely resume page -->
-                    <button class="btn uppercase">Resume</button>
+                    <div class="button-container">
+                        <a class="btn uppercase">Resume</a>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- About Section -->
         <!-- May want to change. Put basic info at the bottom in contact area? -->
         <section class="mx-auto mb-5" id="about">
@@ -111,8 +122,9 @@
                 </div>
             </div>
         </section>
+
         <!-- Skills -->
-        <!-- Need to add node.js and any other backend work -->
+        <!-- Need to add node.js , python, and django -->
         <section class=" mb-5" id="skills">
             <h1 class="text-center my-5 section-title">Skills</h1>
             <div class="section-margin">
@@ -180,278 +192,558 @@
             </div>
 
         </section>
+
         <!-- Portfolio -->
-        <!-- styling adjustments -->
-        <!-- Button to see more projects? maybe not -->
+        <!-- CHANGE IMAGES!! ==> cards: logos with picture backgrounds or website on laptop or phone...modals need some sort of images as well or do videos -->
         <!-- Nasa project once we have data picker working -->
         <!-- Add works were you go above and beyond stretch -->
+        <!-- Create pages for each work and don't forget to add github and demo code with buttons -->
         <section class=" mb-5" id="portfolio">
             <h1 class="text-center my-5 section-title">Portfolio</h1>
             <div class="section-margin">
-                <div class="container row mx-auto">
-                    <!-- 1. sleepmood -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/sleepmood.png"
-                                        alt="Free codecademy Landing page project" ">
-                                    <div class=" card-body">
-                                        <h4 class="front-title text-center">sleepmood</h4>
-                                        <!-- Rather Empty?!?!? -->
-                                    </div>
+                <div class="container row  mx-auto">
+                    <!-- 1. SafeMothers -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/safeMothers.png"
+                                    alt="Safe Mothers Web app picture" ">
+                                <div class="overlay">
+                                    <h4 class="text-center">Riders For Life</h4>
+                                    <h6 class="text-center">Full Stack</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#sfmModal">Learn More</button>
                                 </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class=" card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Front End Developer</li>
-                                                <li>React</li>
-                                                <li>React Library</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Web app that helps users to record, analyze, and improve upon their sleeping habits by recording their sleep time and daily moods.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a href="https://sleepmood.netlify.com/" target="_blank" class="card-btn">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/buildweek-sleeptracker/front-end" target="_blank"
-                                                class="card-btn">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
+                            </div>
+                        </div><!-- Card Ends -->
                     </div>
-                    <!-- 2. Rick & Morty  -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/rickMorty.png"
-                                    alt="React App that uses a Rick and Morty API">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Rick & Morty Universe</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Front End Developer</li>
-                                                <li>React</li>
-                                                <li>React Redux</li>
-                                                <li>React Library</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Fun React-Redux app that fetched data  inside an async action creator from the Rick and Morty API.</p>
+                    <!-- a. SafeMothers Modal -->
+                    <div class="modal modal-rel fade" id="sfmModal" tabindex="-1" role="dialog" aria-labelledby="safeMothersLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="safeMothersLabel">Riders For Life</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <iframe width="720" height="405" src="https://www.youtube.com/embed/KM4jNYUOg7Y?color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Admin Dashboard & Medical Emergency SMS System</h6>
+                                                <p>Riders For Life was an 8 week Labs team project built for the non-profit Safe Mothers, Safe Babies based out of Uganda. Working with a team of 9 other Lambda students, I primarily focused on building the backend database and integrating Frontline SMS to use as an emergency ride request system for pregnant mothers and boda drivers in Uganda. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>React</li>
+                                                            <li>Redux</li>
+                                                            <li>grommet</li>
+                                                            <li>priceline-design-system</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Frontline SMS</li>
+                                                            <li>Node</li>
+                                                            <li>Express</li>
+                                                            <li>PostgreSQL</li>
+                                                            <li>Geolib</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
                                         </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a class="card-btn" href="https://rickmortyuniverse.now.sh/" target="_blank">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/jadeli1720/React-Redux-App-2" target="_blank"
-                                                class="card-btn">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer ">
+                                    <a class="modal-btn mr-4" href="https://github.com/Lambda-School-Labs/safe-mothers-fe" target="blank">
+                                        <i class="fab fa-react"></i>
+                                    </a>
+                                    <a class="modal-btn" href="https://github.com/Lambda-School-Labs/safe-mothers-be" target="blank">
+                                        <i class="fab fa-node-js"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+                    
+                    <!-- 2. African Marketplace -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/africanMarket.gif"
+                                    alt="African Marketplace Log in page picture" ">
+                                <div class="overlay">
+                                    <h4 class=" text-center">African Marketplace</h4>
+                                    <h6 class="text-center">Back End</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#afMarket">Learn More</button>
                                 </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
+                            </div>
+                        </div><!-- Card Ends -->
                     </div>
-                    <!-- 3.  Wedding Gram -->
-                    <!-- Need to fix some of the site links -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/buildWeekOne.png"
-                                    alt="Free codecademy Landing page project" ">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Wedding Gram</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class=" card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>UI Development</li>
-                                                <li>HTML</li>
-                                                <li>Javascript</li>
-                                                <li>Less</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about"> Responsive marketing page promoting the Wedding Gram App.</p>
+                    <!-- b. African Marketplace Modal -->
+                    <div class="modal modal-rel fade" id="afMarket" tabindex="-1" role="dialog" aria-labelledby="africanMarketLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="africanMarketLabel">African Marketplace</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/africanMarket.gif" alt="">
                                             </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">RESTful API & Authentication</h6>
+                                                <p>A week long team project, the African Marketplace App allows African merchants to upload products for sale and view the prices offered by other merchants. As the backend developer, I created a RESTful API that allowed for Registration and Login, held a collection of products and relevant pricing, and allowed for CRUD operations to be performed. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Node</li>
+                                                            <li>Express</li>
+                                                            <li>Knex.js</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Helmet</li>
+                                                            <li>supertest</li>
+                                                            <li>PostgreSQL</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
                                         </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a href="https://weddingram.netlify.com/" target="_blank" class="card-btn">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/jadeli1720/buildweekone-Wedding-Gram" target="_blank"
-                                                class="card-btn">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>   
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                </div>
-                <div class=" container row mt-4 mx-auto">
-                    <!--4. Bella Tea Room -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/landingPage.png"
-                                    alt="Free codecademy Landing page project">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Bella Tea Room</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Responsive Design</li>
-                                                <li>Bootstrap</li>
-                                                <li>Css3</li>
-                                                <li>jQuery</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Crafted a Product Landing Page for one of freeCodeCamp’s ‘Responsive Web Design’ projects.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <a class="card-btn" href="https://codepen.io/jadeli1720/full/XwzPed" target="_blank">
-                                                <i class="fab fa-codepen"></i>
-                                            </a>
-                                            <!-- <a href="" class="btn">GitHub</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                    <!-- 5. 5150whips -->
-                    <!-- Free domain is not working. Will need to change sites -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/5150whips.png" alt="5150Whips Web Page">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">5150Whips</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Web Design</li>
-                                                <li>Bootstrap</li>
-                                                <li>Css3</li>
-                                                <li>javaScript</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Redesigned website for 5150Whips off-road LED company.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center" role="group"
-                                            aria-label="Button Group">
-                                            <a href="http://5150whips.co.nf/" target="_blank" class="card-btn">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <!-- <a href="" class="btn">GitHub</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                    <!-- 6. Survey Form -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card-container">
-                            <div class="card flip-card">
-                                <!-- Front -->
-                                <div class="front">
-                                    <img class="card-img-top" src="images/surveyForm.png" alt="Survey form picture from codepen.">
-                                    <div class="card-body">
-                                        <h4 class="front-title text-center">Survey Form</h4>
-                                    </div>
-                                </div>
-                                <!-- Back -->
-                                <div class="back">
-                                    <div class="card-body">
-                                        <div class="mt-2">
-                                            <h5>Skills</h5>
-                                            <ul class="card-list">
-                                                <li>Responsive Design</li>
-                                                <li>Bootstrap</li>
-                                                <li>Css3</li>
-                                                <li>jQuery</li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-4 ">
-                                            <h5>About</h5>
-                                            <div class="d-flex justify-content-center flex-wrap ">
-                                                <p class="about">Created a Survey Form for one of freeCodeCamp’s ‘Responsive Web Design’ projects.</p>
-                                            </div> 
-                                        </div>
-                                        <div class="button-group d-flex justify-content-center">
-                                            <!-- codepen icon -->
-                                            <a href="" class="card-btn">
-                                                <i class="fab fa-codepen"></i>
-                                            </a>
-                                            <!-- <a href="" class="btn">GitHub</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Card Ends -->
-                        </div><!-- Card-container ends-->
-                    </div>
-                </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/Build-week-African-Marketplace/Back-End" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://front-end.bw-african-marketplace.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
 
+
+                    <!-- 3. sleepmood -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/sleepmood.png"
+                                    alt="sleepmood app market page picture" ">
+                                <div class=" overlay">
+                                    <h4 class=" text-center">sleepmood</h4>
+                                    <h6 class="text-center">Front End</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#slpMood">Learn More</button>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- c. sleepmood -->
+                    <div class="modal modal-rel fade" id="slpMood" tabindex="-1" role="dialog" aria-labelledby="sleepMoodeLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="sleepMoodeLabel">sleepmood</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/sleepmood.png" alt="">
+                                            </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Sleep Tracker Application</h6>
+                                                <p>The sleepmood app was created so users could determine how many hours of sleep is best for them through mood tracking. Users track/record the amount of sleep, their moods before/after sleep, as well as there overall mood for that day. This single sleep entry is collated and used to create daily and weekly data visualization views. Once a week of data has been collected, the app will start to give the user the recommended hours of sleep the user needs to be at their best. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>React</li>
+                                                            <li>React-vis</li>
+                                                            <li>React-dom</li>
+                                                            <li>React-calender</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Axios</li>
+                                                            <li>Formik</li>
+                                                            <li>Semantic-ui</li>
+                                                            <li>Styled Components</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/buildweek-sleeptracker/front-end" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://sleepmood.leananeparidze.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
+                    <!-- 4. Rick & Morty  -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/rickMorty.png"
+                                alt="React App that uses a Rick and Morty API">
+                                <div class="overlay">
+                                    <h4 class=" text-center">Rick & Morty Universe</h4>
+                                    <h6 class="text-center">Front End</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#rickMorty">Learn More</button>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- d. Rick & Morty Modal -->
+                    <div class="modal modal-rel fade" id="rickMorty" tabindex="-1" role="dialog" aria-labelledby="rickMortyLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="rickMortyLabel">Rick & Morty Universe</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/rickMorty.png" alt="">
+                                            </div> 
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Using RESTful API's & Redux</h6>
+                                                <p>The application was created to demonstrate and practice using asynchronous action creators in Redux by returning data from an API of my choice. I chose to use the <a href="https://rickandmortyapi.com/" target="_blank" >Rick and Morty</a> API to create the Rick & Morty Universe app; which displays character, location, and episodic data from it. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>React</li>
+                                                            <li>Redux</li>
+                                                            <li>Redux-thunk</li>
+                                                            <li>React-loader-spinner</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Axios</li>
+                                                            <li>Semantic-ui</li>
+                                                            <li>Styled Components</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/jadeli1720/React-Redux-App-2" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://rickmortyuniverse.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
+                    <!-- 5.  Wedding Gram -->
+                    <!-- Need to fix some of the site links -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/buildWeekOne.png"
+                                alt="Wedding Gram marketing page picture" >
+                                <div class="overlay">
+                                    <h4 class=" text-center">Wedding Gram</h4>
+                                    <h6 class="text-center">UI Developer</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#wedGram">Learn More</button>
+                                </div>
+                            </div> 
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- e. Wedding Gram Modal -->
+                    <div class="modal modal-rel fade" id="wedGram" tabindex="-1" role="dialog" aria-labelledby="wedGramLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="wedGramLabel">Wedding Gram</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/buildWeekOne.png" alt="">
+                                            </div> 
+                                        </div> <!-- End Picture/Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">UI Development and Component Building</h6>
+                                                <p>Wedding Gram is a service designed for Wedding Planners and newly-engaged Couples. Wedding Planners can log in, create a simple post about a wedding event, and then share it without needing to share too much info. Couples can browse all of these posted events to get ideas about for their own wedding to plan.When not logged in, you can view the Home, Login, and Register pages. After login in or registering as a user, You can view your personal dashboard to Add/Edit/Delete posts.</p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Html</li>
+                                                            <li>Less</li>
+                                                            <li>JavaScript</li>
+                                                            <li>React/Redux</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Sass</li>
+                                                            <li>Node</li>
+                                                            <li>Express</li>
+                                                            <li>PostgreSQL</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/jadeli1720/buildweekone-Wedding-Gram" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://weddingram.netlify.com/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
+                    <!--6. Bella Tea Room -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/landingPage.png"
+                                alt="Free codecademy Landing page project">
+                                <div class="overlay">
+                                    <h4 class=" text-center">Bella Tea Room</h4>
+                                    <h6 class="text-center">Web Design</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#belTeaRoom">Learn More</button>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- e. Wedding Gram Modal -->
+                    <div class="modal modal-rel fade" id="belTeaRoom" tabindex="-1" role="dialog" aria-labelledby="belTeaRoomLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="belTeaRoomLabel">Bella Tea Room</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/landingPage.png" alt="">
+                                            </div> 
+                                        </div> <!-- End Picture/Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Responsive Web Design & Product Landing Page</h6>
+                                                <p>Bella Tea Room is a project built for one of five <a href="https://www.freecodecamp.org/">freecodecamp.org</a> Responsive Web design Project. Following criteria set forth by the provided user stories, I created a landing page that gives a quick insight to what Bella Tea Room is and what services they provide to potential customers </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Bootstrap</li>
+                                                            <li>Less</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>jQuery</li>
+                                                            <li>fontAwesome</li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <a class="modal-btn mr-4" href="https://github.com/jadeli1720/buildweekone-Wedding-Gram" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://weddingram.netlify.com/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
+                    <!-- 7. 5150whips -->
+                    <!-- Free domain is not working. Will need to change hosting sites -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/5150whips.png" alt="5150Whips Landing Page picture">
+                                <div class="overlay">
+                                    <h4 class=" text-center">5150Whips</h4>
+                                    <h6 class="text-center">Web Design</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#fiftyWhips">Learn More</button>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div> <!-- Card Ends -->
+                    <!-- f. 5150whips Modal -->
+                    <div class="modal modal-rel fade" id="fiftyWhips" tabindex="-1" role="dialog" aria-labelledby="5150WhipsLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="5150WhipsLabel">5150Whips</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Picture/video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/5150whips.png" alt="">
+                                            </div> 
+                                        </div> <!-- Picture/End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">E-commerce Site Rebuild</h6>
+                                                <p>5150whips is an off-road LED company that needed a new e-commerce website that had better functionality and fit closer to their business needs and company brand. </p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Bootstrap</li>
+                                                            <li>CSS</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>jQuery</li>
+                                                            <li>Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <!-- <a class="modal-btn mr-4" href="https://github.com/jadeli1720/React-Redux-App-2" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a> -->
+                                    <a class="modal-btn mr-4" href="http://5150whips.co.nf/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+                </div>
             </div>
         </section>
+
         <!-- Experience -->
         <section class=" mb-5" id="experience">
             <h1 class="text-center my-5 section-title">Experience</h1>
@@ -634,6 +926,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Contact -->
         <!-- FIX STYLING ASAP : class? picture background? address moves down here to the left then contact on the right-->
         <section id="contact">
@@ -671,7 +964,7 @@
                                 </div>
                             </div>
                             <div class="button-container d-flex justify-content-center">
-                                <button class="contact-btn" type="Submit"><a>Submit</a></button>
+                                <a class="btn text-center" type="Submit">Submit</a>
                             </div>
                         </form>
                     </div>

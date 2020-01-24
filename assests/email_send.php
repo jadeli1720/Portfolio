@@ -38,7 +38,7 @@
         die();
     } else {
         // $email_body = "Hi Jade! You have just received a new message from ".$name."\n ";
-        $htmlContent = '
+        $email_body = '
             <html >
                 <head>
                     <title>Portfolio Contact Form</title>
@@ -69,7 +69,7 @@
                     'X-Mailer: PHP/' . phpversion();
         
 
-        if(mail($email_to, $email_subject, $htmlContent, $headers)) {
+        if(mail($email_to, $email_subject, $email_body, $headers)) {
             $response = array('status' => true, 'message' => 'Thank you for contacting us. I will be in touch with you very soon.');
             echo json_encode($response);
         } else{

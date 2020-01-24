@@ -60,7 +60,7 @@
         ';
 
         // headers
-        $headers = 'From:'.$email_fromName.'<'.$email_from.'>' . "\r\n".
+        $headers[] = 'From:'.$email_fromName.'<'.$email_from.'>' . "\r\n".
                     'Reply-To: <'.$email_from.'>' . "\r\n" .
                     //headers to send HTML content
                     'MIME-Version: 1.0';

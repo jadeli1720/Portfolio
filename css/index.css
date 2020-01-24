@@ -36,6 +36,10 @@ p{
   letter-spacing: .5px;
   line-height: 30px;
 }
+
+.hidden {
+  visibility: hidden;
+}
 /* globals */
 .uppercase {
   text-transform: uppercase;

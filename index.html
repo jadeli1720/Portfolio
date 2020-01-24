@@ -74,11 +74,11 @@
                 <div class="mx-auto d-flex flex-row " role="group" aria-label="Button Group">
                     <!-- Button Goes to Contact Form? -->
                     <div class="button-container">
-                        <a class="btn uppercase ">Hire Me</a>
+                        <a href="#contact" class="btn uppercase ">Hire Me</a>
                     </div>
                     <!-- Button needs to go to either separate page for resume or pdf most likely resume page -->
                     <div class="button-container">
-                        <a class="btn uppercase">Resume</a>
+                        <a href="./assests/jlopez_resume.pdf" target="_blank" class="btn uppercase">Resume</a>
                     </div>
                 </div>
             </div>
@@ -90,33 +90,17 @@
             <h1 class="text-center mb-5 section-title">About Me</h1>
             <div class="card container section-margin">
                 <div class="row">
-                    <div class="col-lg-7 px-4">
-                        <h2 class="card-title text-center mt-4">Hello!</h2>
+                    <div class="col-lg-12 px-4">
+                        <h2 class="card-title text-center mt-4">Web Developer, Musician, Dancer, Dreamer </h2>
                         <!-- NEED TO EDIT!!!!! Tell a story with interesting facts musical, dancing, random facts...personalize it! -->
                         <div class="card-body">
-                            <p>I am a Graphic/Web Designer currently studying Full Stack Web Development and <a
-                                    class="Lambda" href="https://lambdaschool.com/" target="_blank">Lambda School.</a> I
-                                love to meet new people, immerse myself into creatively charged atmospheres; and love to
-                                find design inspiration in the world around me. It is important to me to constantly push
-                                myself to learn new things and to help so that I may grow as a designer and an
-                                individual. </p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-5  ">
-                        <h2 class="card-title text-center mt-4">Basic Information</h2>
-                        <div class="row card-body d-flex justify-content-center">
-                            <!-- May need to adjust column size? -->
-                            <div class="col-lg-3 d-flex flex-column">
-                                <p>Email:</p>
-                                <p>Phone:</p>
-                                <p>Address:</p>
-                            </div>
-                            <div class="col-lg-7 d-flex flex-column">
-                                <p>jadeli1720@gmail.com</p>
-                                <p>(909) 379-4021</p>
-                                <p>3379 Reindeer Circle, Colorado Springs, CO 80922</p>
-                            </div>
+                            <p>Hello! I am a Graphic Designer/Web Developer who enjoys being immersed in a creatively
+                            charged atmosphere, and is passionate about design and learning new technologies. Currently, I am studying Full Stack Web Development at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda School </a>, where I have gained experience with HTML, CSS, JavaScript, React.js, Node.js, Knex.js, and more. 
+                            
+                            </p>
+                            <p>These experiences, along with working 14 years in the customer service industry, have taught me creative problem-solving and effective communication skills as well as how to work in teams.  Personally, it is my goal to constantly push myself to learn new things so that I may grow as a designer, developer, and as an individual.
+                            </p>
+                            <p>Outside of web development, I love to do anything that engages my creative side. This includes anything from singing/playing/listening to music of all genres, cooking, and drawing. Other times I enjoy reading a good book or to travel here in Colorado or abroad.</p>
                         </div>
                     </div>
                 </div>
@@ -202,7 +186,84 @@
             <h1 class="text-center my-5 section-title">Portfolio</h1>
             <div class="section-margin">
                 <div class="container row  mx-auto">
-                    <!-- 1. SafeMothers -->
+                    <!-- 1. CyberPunk Mud -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/cypberpunk.png"
+                                    alt="Safe Mothers Web app picture" ">
+                                <div class="overlay">
+                                    <h4 class="text-center">CyberPunk Mud</h4>
+                                    <h6 class="text-center">Full Stack</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#cbpmModal">Learn More</button>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- a. CyberPunk Mud Modal -->
+                    <div class="modal modal-rel fade" id="cbpmModal" tabindex="-1" role="dialog" aria-labelledby="cyberPunkLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="safeMothersLabel">CyberPunk Mud</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Video -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img src="images/cypberpunk.png" alt="CyberPunk Mud site">
+                                            </div>  
+                                        </div> <!-- End Video -->
+                                        <div class="row d-flex justify-content-center text">
+                                            <!-- Summary -->
+                                            <div class="col-md-7 mt-3 mb-3">
+                                                <h6 class="modal-heading mb-4">Multi-User Dungeon Game</h6>
+                                                <p>For my first Computer Science Build Week at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda</a>, I and four other students had to create a simple interactive MUD client and server. With only one day to learn Django, we successfully built and deployed a backend using an algorithm to generate 101 rooms that multiple players could traverse using our React front-end. Though I worked on both client and server sides of the project, I took on the role of UX/UI Designer to come up with the retro-cyberpunk aesthetic of our game using <a class="web-links" href="https://www.figma.com/file/vXoOUzNlbGbiU7MdHe0kQm/MUD-Wireframe?node-id=0%3A1" target="_blank">Figma</a>.</p>
+                                            </div> <!--End Summary-->
+                                            <!-- Tech Stack -->
+                                            <div class="col-md-5 mt-3 mb-3 ">
+                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>React</li>
+                                                            <li>Redux</li>
+                                                            <li>React-Vis</li>
+                                                            <li>Sass</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 no-pad">
+                                                        <ul class="tech-list">
+                                                            <li>Python</li>
+                                                            <li>Django</li>
+                                                            <li>PostgreSQL</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!--End Tech Stack-->
+                                        </div>
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer ">
+                                    <a class="modal-btn mr-4" href="https://github.com/cs-24-bw-mud" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://cypberpunkmud.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+
+                    <!-- 2. SafeMothers -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -216,7 +277,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- a. SafeMothers Modal -->
+                    <!-- b. SafeMothers Modal -->
                     <div class="modal modal-rel fade" id="sfmModal" tabindex="-1" role="dialog" aria-labelledby="safeMothersLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -281,7 +342,7 @@
                         </div>
                     </div> <!--End Modal-->
                     
-                    <!-- 2. African Marketplace -->
+                    <!-- 3. African Marketplace -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -295,7 +356,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- b. African Marketplace Modal -->
+                    <!-- c. African Marketplace Modal -->
                     <div class="modal modal-rel fade" id="afMarket" tabindex="-1" role="dialog" aria-labelledby="africanMarketLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -312,7 +373,7 @@
                                         <!-- Picture/video -->
                                         <div class="row">
                                             <div class="col-md-12 text-center ">
-                                                <img src="images/africanMarket.gif" alt="">
+                                                <img src="images/africanMarket.gif" alt="African Marketplace Site">
                                             </div> 
                                         </div> <!-- End Video -->
                                         <div class="row d-flex justify-content-center text">
@@ -358,7 +419,7 @@
                     </div> <!--End Modal-->
 
 
-                    <!-- 3. sleepmood -->
+                    <!-- 4. sleepmood -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -372,7 +433,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- c. sleepmood -->
+                    <!-- d. sleepmood -->
                     <div class="modal modal-rel fade" id="slpMood" tabindex="-1" role="dialog" aria-labelledby="sleepMoodeLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -436,7 +497,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 4. Rick & Morty  -->
+                    <!-- 5. Rick & Morty  -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -450,7 +511,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- d. Rick & Morty Modal -->
+                    <!-- e. Rick & Morty Modal -->
                     <div class="modal modal-rel fade" id="rickMorty" tabindex="-1" role="dialog" aria-labelledby="rickMortyLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -513,7 +574,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 5.  Wedding Gram -->
+                    <!-- 6.  Wedding Gram -->
                     <!-- Need to fix some of the site links -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -528,7 +589,7 @@
                             </div> 
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- e. Wedding Gram Modal -->
+                    <!-- f. Wedding Gram Modal -->
                     <div class="modal modal-rel fade" id="wedGram" tabindex="-1" role="dialog" aria-labelledby="wedGramLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -592,7 +653,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!--6. Bella Tea Room -->
+                    <!--7. Bella Tea Room -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -606,7 +667,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- e. Wedding Gram Modal -->
+                    <!-- g. Bella Tea Room -->
                     <div class="modal modal-rel fade" id="belTeaRoom" tabindex="-1" role="dialog" aria-labelledby="belTeaRoomLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -667,7 +728,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 7. 5150whips -->
+                    <!-- 8. 5150whips -->
                     <!-- Free domain is not working. Will need to change hosting sites -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -681,7 +742,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div> <!-- Card Ends -->
-                    <!-- f. 5150whips Modal -->
+                    <!-- h. 5150whips Modal -->
                     <div class="modal modal-rel fade" id="fiftyWhips" tabindex="-1" role="dialog" aria-labelledby="5150WhipsLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -933,38 +994,49 @@
             <h1 class="text-center my-5 section-title">Contact Me</h1>
             <div class="contact-margin">
                 <div class="container card " id="contact-card">
-                    <div class="mx-auto mt-5">
-                        <h2 class="card-title text-center">I'd Love To Hear From You</h2>
-                        <p class="mt-4">Have questions or just want to say hello? Drop me a line bellow!
+                    <div class="mx-auto mt-4">
+                        <h2 class="contact-title text-center">Let's Get Started</h2>
+                        <p class="mt-2">Have questions or just want to say hello? Drop me a line bellow!
                         </p>
                     </div>
                     <!-- Need to center. May not need form-container -->
                     <div class="form-container ">
-                        <form class="inner-form" action="">
+                        <form class=" needs-validation inner-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" novalidate>
                             <div class="form-row ">
                                 <div class="form-group col-md-12 bottom-margin ">
-                                    <label for="name">Name:</label>
-                                    <input type="text" id="name" class="form-control form-control-lg"
-                                        placeholder="Your name..." aria-placeholder="Your name...">
+                                    <!-- <p class="hidden">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                    </p> -->
+                                    <label for="newName">Name:</label>
+                                    <input type="text" id="newName" name="newName" class="form-control form-control-lg"
+                                        placeholder="Your name..." aria-placeholder="Your name..." required>
+                                    <div class="valid-feedback">Looks good! Thanks.</div>
+                                    <div class="invalid-feedback">Opps! I need a name please. Try again.</div>
                                 </div>
                                 <div class="form-group col-md-12 bottom-margin ">
-                                    <label for="email">Email:</label>
-                                    <input type="text" id="email" class="form-control form-control-lg"
-                                        placeholder="example@email.com" aria-placeholder="example@email.com">
+                                    <label for="newEmail">Email:</label>
+                                    <input type="text" id="newEmail" name="newEmail" class="form-control form-control-lg"
+                                        placeholder="example@email.com" aria-placeholder="example@email.com" required>
+                                        <div class="valid-feedback">Looks good! Thanks. </div>
+                                        <div class="invalid-feedback">Opps! I need a email please. Try again.</div>
                                 </div>
                                 <div class="form-group col-md-12 bottom-margin ">
-                                    <label for="phone">Phone:</label>
-                                    <input type="text" id="phone" class="form-control form-control-lg"
+                                    <label for="newPhone">Phone:</label>
+                                    <input type="text" id="newPhone" name="newPhone" class="form-control form-control-lg"
                                         placeholder="(123)-456-7890" aria-placeholder="(123)-456-7890">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="message">Message:</label>
-                                    <textarea class="form-control" name="message" id="message" cols="30" rows="10"
-                                        placeholder="Your message..." aria-placeholder="Your message..."></textarea>
+                                    <label for="newMessage">Message:</label>
+                                    <textarea class="form-control" name="newMessage" id="newMessage" cols="30" rows="5"
+                                    placeholder="Your message..." aria-placeholder="Your message..." required>
+                                    </textarea>
+                                    <div class="valid-feedback">Looks good! Thanks. </div>
+                                    <div class="invalid-feedback">Opps! I need a message please. Try again.</div>
                                 </div>
+                                <div data-netlify-recaptcha="true"></div>
                             </div>
                             <div class="button-container d-flex justify-content-center">
-                                <a class="btn text-center" type="Submit">Submit</a>
+                                <button class="btn text-center" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>

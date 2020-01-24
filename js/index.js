@@ -40,8 +40,8 @@ $(window).scroll(function() {
     $("#portfolio").addClass("after_modal_appended");
   
     //removes the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
-    $('body').removeClass("modal-open")
-      $('body').css("padding-right","");     
+    // $('body').removeClass("modal-open")
+    //   $('body').css("padding-right","");     
 });
 
 
@@ -55,4 +55,4 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
 })
 
 //Below will allow me to keep modal open and design it. Just change the modal id
-$('#fiftyWhips').modal('toggle')
+// $('#fiftyWhips').modal('toggle')

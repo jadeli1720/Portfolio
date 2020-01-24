@@ -52,7 +52,29 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
 
 
 
+/** 4. Form Validation --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, everyother modal has slight page movement
+ **************************************************************** **/	
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    let forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    let validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
 })
 
 //Below will allow me to keep modal open and design it. Just change the modal id
-// $('#fiftyWhips').modal('toggle')
+// $('#cbpmModal').modal('toggle')
+

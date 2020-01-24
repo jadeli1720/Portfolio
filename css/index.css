@@ -443,17 +443,23 @@ nav .nav-item {
   background: #1B242F;
   background-image: linear-gradient(to top, #1b242f, #182632, #132834, #0d2b36, #052d37);
   background-image: url("../images/leaf_overlay.png"), linear-gradient(to top,  #1b242f, #182632, #132834, #0d2b36, #052d37);
-  padding-bottom: 130px;
+  padding-bottom: 80px;
 }
 
 .contact-margin{
-  margin-top:150px;
+  margin-top:80px;
 }
 
 #contact-card {
   background-color: rgb(255, 254, 248);
   background-image: url("../images/crossword.png");
   padding:0;
+}
+
+.contact-title{
+  color:#1B242F;
+  border-bottom: rgba(0, 161, 167, 0.185) 1px solid;
+  padding-bottom: 15px;
 }
 
 .form-container {
@@ -464,24 +470,24 @@ nav .nav-item {
      -moz-box-shadow: inset 1px 7px 12px 0px rgba(0,0,0,1);
           box-shadow: inset 1px 7px 12px 0px rgba(0,0,0,1);
   margin: 20px;
-  padding: 40px 20px 20px ;
+  padding:20px ;
 }
 .inner-form {
-  margin: 40px 0 0px;
+  margin: 20px 0 0px;
   ;
 }
 
 .form-row {
   color:white;
-  margin: 0 150px;
+  margin: 0 10%;
 }
 
 .bottom-margin {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .form-group label {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   padding-bottom: 2px;
 }

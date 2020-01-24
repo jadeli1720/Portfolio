@@ -1,5 +1,5 @@
 <?php
- if(isset($_POST['submit'])) {
+ if(isset($_POST)) {
     $email_to = "jadeli1720gmail.com";
     $email_from = "jadeelopez@from.com";
     $email_fromName = "Contact | Portfolio Inquiry";

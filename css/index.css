@@ -37,12 +37,26 @@ p{
   line-height: 30px;
 }
 
-.hidden {
-  visibility: hidden;
-}
+
 /* globals */
 .uppercase {
   text-transform: uppercase;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.web-links{
+  color: rgb(245, 20, 114);
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out ;
+}
+
+.web-links:hover{
+  color: #00A1A7;
+  text-decoration: none;
 }
 
 /* May need to button tags to a tags so that we can use href attribute */

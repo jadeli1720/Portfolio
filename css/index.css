@@ -10,6 +10,7 @@ body {
   background-color: rgb(255, 254, 248);
   background-image: url("../images/crossword.png");
   height: 100%;
+  
 }
 
 body {
@@ -160,10 +161,10 @@ nav {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-nav .nav-item {
-  margin: 10px 50px;
+ nav .nav-item {
+   margin: 2% 9%;
   transition: all 0.5s ease-in-out ;
-}
+} 
 
 .nav-link{
   color:white;
@@ -173,18 +174,17 @@ nav .nav-item {
 
 .nav-item:active{
   color: #E31B6D;
-  background: #032027bc;
 }
 
 /* #1B242F */
 .nav-link:hover{
   color: #E31B6D;
-  background: #032027bc;
+  /* background: #03202770; */
 }
 
 .active a {
   color: #E31B6D;
-}
+} 
 
 
 
@@ -535,3 +535,14 @@ footer p{
   color: white;
 }
 
+.social-icons a {
+  color: white;
+  margin-left: 15%;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out ;
+
+}
+
+.social-icons a:hover {
+  color: #E31B6D;
+}

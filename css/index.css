@@ -1,6 +1,5 @@
-/* resets */
+/* browser resets */
 * {
-  /* box-sizing: border-box; */
   vertical-align: baseline;
 	font-weight: inherit;
 	font-family: inherit;
@@ -14,7 +13,7 @@
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; 
   background-color: rgb(255, 254, 248);
   background-image: url("../images/crossword.png");
   width: 100%;
@@ -23,7 +22,6 @@ body {
 
 body {
   position: relative; 
-  /* overflow: auto !important; */
 }
 
 h1,
@@ -44,6 +42,10 @@ p{
   font-weight: 300;
   letter-spacing: .5px;
   line-height: 30px;
+}
+
+button {
+  outline: 0;
 }
 
 
@@ -555,9 +557,14 @@ footer p{
   color: white;
 }
 
+.social {
+  text-align: right;
+}
+
 .social-icons a {
   color: white;
-  margin-left: 15%;
+  margin-left: 0;
+  padding-left: 12%;
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out ;
 
@@ -565,4 +572,14 @@ footer p{
 
 .social-icons a:hover {
   color: #E31B6D;
+}
+
+@media (max-width: 575.98px) { 
+  footer{
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
 }

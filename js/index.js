@@ -6,7 +6,6 @@ $(document).ready(function() {
 let scroll = new SmoothScroll('a[href*="#"]', {offset: 30,speed:800});
 
 
-
 /** 2. Active Link -- not working -- skips experience??
  **************************************************************** **/	
 $(window).scroll(function() {
@@ -27,7 +26,15 @@ $(window).scroll(function() {
     
   })
 
-  /** 3. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, everyother modal has slight page movement
+  /** 3. Navbar toggle icon  --> 
+ **************************************************************** **/	
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
+
+
+
+  /** 4. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, every other modal has slight page movement
  **************************************************************** **/	
 // Not a great solution. Look for something else
   
@@ -50,9 +57,11 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
   $('#sfmModal iframe').attr("src", $('#sfmModal iframe').attr('src'));
 });
 
+//Below will allow me to keep modal open and design it. Just change the modal id
+// $('#cbpmModal').modal('toggle')
 
 
-/** 4. Form Validation --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, everyother modal has slight page movement
+/** 5. Bootstrap Form Validation --> 
  **************************************************************** **/	
 (function() {
   'use strict';
@@ -74,7 +83,4 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
 
 
 })
-
-//Below will allow me to keep modal open and design it. Just change the modal id
-// $('#cbpmModal').modal('toggle')
 

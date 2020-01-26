@@ -1,4 +1,4 @@
-/* browser resets */
+/**************BROWSER RESETS**************/
 * {
   vertical-align: baseline;
 	font-weight: inherit;
@@ -11,6 +11,7 @@
 	margin: 0;
 }
 
+/**************GLOBALS**************/
 html,
 body {
   overflow-x: hidden; 
@@ -48,8 +49,7 @@ button {
   outline: 0;
 }
 
-
-/* globals */
+/**************GLOBAL CLASSES**************/
 .uppercase {
   text-transform: uppercase;
 }
@@ -70,12 +70,10 @@ button {
   text-decoration: none;
 }
 
-/* May need to button tags to a tags so that we can use href attribute */
 .btn-group {
   color: white;
 }
 
-/* May need to change button so we can have background shift colors on hover */
 .btn {
   background: #E31B6D;
   background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
@@ -110,7 +108,6 @@ button {
           box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.61);
 }
 
-/* Change Cards to glassy texture? Less box-shadow? */
 .card {
   background-color: rgb(246, 246, 246);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.47);
@@ -133,7 +130,7 @@ button {
   padding: 0px;
 }
 
-/* Navigation */
+/**************NAVIGATION**************/
 
 header {
   margin-bottom: 75px;
@@ -197,7 +194,7 @@ nav {
   color: #E31B6D;
 }
 
-/* #1B242F */
+
 .nav-link:hover{
   color: #E31B6D;
   /* background: #03202770; */
@@ -209,7 +206,7 @@ nav {
 
 
 
-/* Jumbotron   Dark Teal:#023E4D*/
+/**************JUMBOTRON**************/
 .jumbotron {
   background: #1B242F;
   background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
@@ -250,17 +247,15 @@ nav {
   margin: 20px 0;
 }
 
-/* Skills */
+/**************SKILLS**************/
 
 
-/* Portfolio */
+/**************PORTFOLIO**************/
 
 .port {
   margin: 10px 0px 20px;
 }
 
-/*Pink Colors #cf1460, #c00f57, #b20a4e, #a40546, #96013e */
-/*Teal Colors #00a1a7, #01a7ad, #01adb3, #02b4ba, #03bac0  */
 .hovereffect {
   background-color: #cf1460;
   width: 100%;
@@ -298,7 +293,7 @@ nav {
           transform: scale(1);
 }
 
-/* card image */
+/* Card Image */
 .hovereffect img {
   display: block;
   position: relative;
@@ -350,7 +345,7 @@ nav {
   -webkit-transform: translate3d(0,100%,0);
           transform: translate3d(0,100%,0);
 }
-/* May get rid of box shadow. Simplify? */
+
 .hovereffect button:hover {
   border: 0.1px solid  #b8fdff;
   color: #02f7ff;
@@ -375,7 +370,7 @@ nav {
 }
 
 
-/* Modal Styles */
+/******PORTFOLIO - MODALS******/
 .modal{ 
   overflow: hidden; 
 }
@@ -451,7 +446,7 @@ nav {
 
 
 
-/* Experience */
+/**************EXPERIENCE**************/
 #experience h4{
   color:rgb(1, 140, 145);
 }
@@ -478,7 +473,7 @@ nav {
 }
 
 
-/* Contact */
+/**************CONTACT**************/
 #contact {
   background: #1B242F;
   background-image: linear-gradient(to top, #1b242f, #182632, #132834, #0d2b36, #052d37);
@@ -541,7 +536,7 @@ nav {
 }
 
 
-/* Footer */
+/**************FOOTER**************/
 footer {
   background: #1B242F;
   background-image: linear-gradient(to top, #1b242f, #182632, #132834, #0d2b36, #052d37);
@@ -574,12 +569,22 @@ footer p{
   color: #E31B6D;
 }
 
+/**************MEDIA QUERIES**************/
+
+
 @media (max-width: 575.98px) { 
+
   footer{
     text-align: center;
   }
 
   .social {
     text-align: center;
+    
+  }
+
+  .social-icons a {
+    margin: auto;
+    padding: 0 6%;
   }
 }

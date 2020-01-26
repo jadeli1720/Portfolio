@@ -1,15 +1,24 @@
 /* resets */
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
 }
-html {
-  overflow-x: hidden;
-}
+
 html,
 body {
+  overflow-x: hidden;
   background-color: rgb(255, 254, 248);
   background-image: url("../images/crossword.png");
-  height: 100%;
+  width: 100%;
+  
 }
 
 body {
@@ -125,7 +134,8 @@ p{
 /* Navigation */
 
 header {
-  margin-bottom: 80px;
+  margin-bottom: 75px;
+
 }
 
 nav {
@@ -147,6 +157,7 @@ nav {
   transition: all 0.5s ease-in-out ;
 }
 
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(227,27,109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   transition: all 0.5s ease-in-out ;
@@ -160,10 +171,19 @@ nav {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-nav .nav-item {
-  margin: 10px 50px;
-  transition: all 0.5s ease-in-out ;
+.navbar-toggler:focus {
+  border-color: #E31B6D;
+  outline: 0;
 }
+
+.navbar-toggler-icon:focus {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(227,27,109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+ nav .nav-item {
+   margin: 2% 9%;
+  transition: all 0.5s ease-in-out ;
+} 
 
 .nav-link{
   color:white;
@@ -173,18 +193,17 @@ nav .nav-item {
 
 .nav-item:active{
   color: #E31B6D;
-  background: #032027bc;
 }
 
 /* #1B242F */
 .nav-link:hover{
   color: #E31B6D;
-  background: #032027bc;
+  /* background: #03202770; */
 }
 
 .active a {
   color: #E31B6D;
-}
+} 
 
 
 
@@ -194,8 +213,9 @@ nav .nav-item {
   background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
   background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #1b242f, #182632, #132834, #0d2b36, #052d37);
   color: white;
-  margin-bottom: 0px;
-  height: 95vh;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .jumbotron-img {
@@ -535,3 +555,14 @@ footer p{
   color: white;
 }
 
+.social-icons a {
+  color: white;
+  margin-left: 15%;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out ;
+
+}
+
+.social-icons a:hover {
+  color: #E31B6D;
+}

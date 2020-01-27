@@ -451,26 +451,143 @@ nav {
   color:rgb(1, 140, 145);
 }
 
+.timeline-block {
+  position: relative;
+}
+
 .timeline::before{
-    top: 20%;
-    bottom: 0;
-    position: absolute;
-    content:" ";
-    width: 2px;
-    height: 70%;
-    background: rgba(227, 27, 110, 0.205);
-    left: 31%;
-    margin-left: 1.5px;
+  content:" "; 
+  top: 1%;
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgba(227, 27, 110, 0.205);
+  /* The left attribute needs to be adjusted */
+  left: 29.1%; 
+}
+
+.icon-timeline {
+  /* border: 1px solid orange; */
+  width: 100%;
+}
+
+.icon-wrapper {
+  background-color: #E31B6D;
+  border-radius: 50%;
+  color: white;
+  position: absolute; 
+  left: 22%;
+  margin: 0 auto;
+  top: 10%;
+  padding-top: 16px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
 
 .fa-briefcase, .fa-graduation-cap {
-  background-color: #E31B6D;
-  color: white;
-  font-size:22px;
-  padding: 20px;
-  border-radius: 50%;
-  z-index: 999;
+  font-size:18px; 
 }
+
+.right-wrapper{
+  padding-left: 68px;
+}
+
+.left-wrapper p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #052d3786
+}
+
+@media (max-width: 1024px) {
+
+  .icon-wrapper {
+    left: 17%
+  }
+}
+
+@media (max-width: 990px ) {
+  .icon-wrapper{
+    left: 8%;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .left-timeline, .right-timeline{
+    margin-left: 70px;
+  }
+  
+  .left-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .left-wrapper p::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100px;
+    background: #cc02531e;
+    position: absolute;
+    margin-top: 6px;
+  }
+
+  .right-wrapper {
+    padding-top: 12px;
+    padding-left: 20px;
+  }
+
+  .right-wrapper h4 {
+
+    font-size: 20px;
+  }
+
+  .timeline::before{
+    left: 5%;
+  }
+
+  .icon-timeline {
+      width: 100%;
+      position: absolute
+    }
+
+    .icon-wrapper{
+      margin-top: 2%;
+      left: 0%;
+    }
+
+    
+}
+
+@media(max-width: 480px) {
+  .icon-wrapper {
+    margin-top: 5%;
+    left: 1%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    padding-top: 10.5px;
+  }
+  .fa-briefcase, .fa-graduation-cap {
+    font-size: 15px;
+  }
+}
+
+
+
+/* .icon-wrapper {
+  border-radius: 50%;
+  padding-top: 16px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+} */
+
+/* .fa-briefcase, .fa-graduation-cap {
+  font-size:18px; 
+} */
 
 
 /**************CONTACT**************/

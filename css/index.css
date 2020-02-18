@@ -45,6 +45,13 @@ p{
   line-height: 30px;
 }
 
+ul,li{
+  font-family: 'Setimo','Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 button {
   outline: 0;
 }
@@ -54,16 +61,19 @@ button {
   text-transform: uppercase;
 }
 
+
 .hidden {
   visibility: hidden;
 }
 
 .web-links{
   color: rgb(245, 20, 114);
+  cursor: pointer;
   font-weight: 500;
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out ;
 }
+
 
 .web-links:hover{
   color: #00A1A7;
@@ -179,8 +189,8 @@ nav {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(227,27,109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='15' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
- nav .nav-item {
-   margin: 2% 9%;
+nav .nav-item {
+  margin: 2% 9%;
   transition: all 0.5s ease-in-out ;
 } 
 
@@ -203,7 +213,6 @@ nav {
 .active a {
   color: #E31B6D;
 } 
-
 
 
 /**************JUMBOTRON**************/
@@ -378,7 +387,7 @@ nav {
   overflow: hidden; 
 }
 .modal-header{
-  border-bottom: 1px solid rgba(0, 161, 167, 0.281);
+  border-bottom: 1px solid #00a1a748;
 }
 
 .modal-body{
@@ -400,14 +409,40 @@ nav {
 .modal-container {
   margin: 0;
   padding: 0;
+  
 }
 
-.text {
+.text-background {
   background-color: white;
 }
 
-.text p {
-  font-size: 14px;
+.modal-subheading{
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.modal-description p{ 
+  color: #052d37; 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.dark-teal{
+  color: #004749;
+}
+
+.light-teal{
+  color: #00A1A7;
+}
+
+
+.modal-description{
+  
+}
+
+.text {
+  font-size: 15px;
   line-height: 22px;
 }
 

@@ -57,12 +57,13 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
   $('#sfmModal iframe').attr("src", $('#sfmModal iframe').attr('src'));
 });
 
-//Below will allow me to keep modal open and design it. Just change the modal id
-// $('#cbpmModal').modal('toggle')
+//The code below will allows the modal to stay open for design and editing. Just change the modal id
+$('#sfmModal').modal('toggle')
 
 
 /** 5. Bootstrap Form Validation --> 
  **************************************************************** **/	
+
 (function() {
   'use strict';
   window.addEventListener('load', function() {

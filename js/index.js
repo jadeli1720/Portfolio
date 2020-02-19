@@ -58,7 +58,7 @@ $('#sfmModal').on('hidden.bs.modal', function(e) {
 });
 
 //The code below will allows the modal to stay open for design and editing. Just change the modal id. Comment out when finished.
-$('#fiftyWhips').modal('toggle')
+// $('#fiftyWhips').modal('toggle')
 
 
 /** 5. Bootstrap Form Validation --> 

@@ -252,7 +252,7 @@
                                                 <p>I and four other students developed a simple interactive, multi-user game during the Computer Science Build Week at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda</a>. Consisting of 101 rooms, users can explore this retro cyberpunk-inspired game and see other users in real-time.</p>
                                                 <ul class="pl-3 .modal-list">
                                                     <li class="p-1" >With only one day to learn  Django, we deployed a RESTful API backend to Heroku and used PostgreSQL for data persistence.</li>
-                                                    <li class="p-1">Implemented an algorithm on the backend to generate a spiral maze with which users can interact with and explore.</li>
+                                                    <li class="p-1"> An algorithm was implemented on the backend to generate a spiral maze with which users can interact with and explore.</li>
                                                     <li class="p-1">Styled with Sass, the React/Redux frontend uses React-vis to display the maze in a spiral node like fashion.</li>
                                                     <li class="p-1">I took on the role as the UX/UI designer and created/implemented the retro-cyberpunk aesthetic of the game using <a class="web-links" href="https://www.figma.com/file/vXoOUzNlbGbiU7MdHe0kQm/MUD-Wireframe?node-id=0%3A1" target="_blank">Figma</a> to create a moodboard and wireframes.</li>
                                                 </ul>
@@ -318,7 +318,7 @@
                                                 <p>The 'Riders for Life'  project was a team collaboration consisting of 1 UX Designer and 6 other Web Developers. As part of Lambda Labs, the goal of the project was to create a two-part application for the non-profit <a href="https://www.safemotherssafebabies.org/" target="_blank" class="web-links">Safe Mothers, Safe Babies</a> in Uganda. </p>
                                                 <ul class="pl-3 .modal-list">
                                                     <li class="p-1" >Working with the non-profits’ stake-holder for 8 weeks, we increased the productivity, reliability, and usability of both parts of the application; enhancing the overall quality of the users experience.</li>
-                                                    <li class="p-1">My primary focus, was building the database for our node backend, and integrating<a href="https://www.frontlinesms.com/" target="_blank" class="web-links">Frontline SMS </a>. This text-messaging cloud service provided a reliable SMS emergency ride request system for pregnant mothers and Boda drivers in Uganda.</li>
+                                                    <li class="p-1">My primary focus, was building the database for our node backend, and integrating <a href="https://www.frontlinesms.com/" target="_blank" class="web-links">Frontline SMS</a>. This text-messaging cloud service provided a reliable SMS emergency ride request system for pregnant mothers and Boda drivers in Uganda.</li>
                                                     <li class="p-1">We employed the use of the<a href="https://www.npmjs.com/package/geolib/" target="_blank" class="web-links"> GeoLib </a>library to help the application locate the nearest driver to a pregnant mother requesting a ride, and then dispatched them to said mother for emergency services.</li>
                                                     <li class="p-1">A React/Redux administrative dashboard was developed to allow administrative users to interact with mother/driver data collected on the ground in Uganda.</li>
                                                 </ul>
@@ -373,33 +373,22 @@
                                                 <img src="images/africanMarket.gif" alt="African Marketplace Site">
                                             </div> 
                                         </div> <!-- End Video -->
-                                        <div class="row d-flex justify-content-center text">
-                                            <!-- Summary -->
-                                            <div class="col-md-7 mt-3 mb-3">
-                                                <h6 class="modal-heading mb-4">RESTful API & Authentication</h6>
-                                                <p>A week long team project, the African Marketplace App allows African merchants to upload products for sale and view the prices offered by other merchants. As the backend developer, I created a RESTful API that allowed for Registration and Login, held a collection of products and relevant pricing, and allowed for CRUD operations to be performed. </p>
-                                            </div> <!--End Summary-->
-                                            <!-- Tech Stack -->
-                                            <div class="col-md-5 mt-3 mb-3 ">
-                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
-                                                <div class="row">
-                                                    <div class="col-md-6 no-pad">
-                                                        <ul class="tech-list">
-                                                            <li>Node</li>
-                                                            <li>Express</li>
-                                                            <li>Knex.js</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-md-6 no-pad">
-                                                        <ul class="tech-list">
-                                                            <li>Helmet</li>
-                                                            <li>supertest</li>
-                                                            <li>PostgreSQL</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div> <!--End Tech Stack-->
-                                        </div>
+                                        <!-- Summary -->
+                                        <div class="row d-flex flex-column text-background p-4">
+                                            <div class="modal-heading ">
+                                                <h5>Admin Dashboard & Medical Emergency SMS System</h5>
+                                                <p class= "modal-subheading font-weight-normal ">Tech Stack: <span class="font-weight-light font-italic light-teal"> Node, Express, Knex, Helmet, Supertest, SQLite3, PostgreSQL</span></p>
+                                            </div>
+                                            <!-- Description -->
+                                            <div class="modal-description px-4">
+                                                <p>A week-long team collaboration, the African Marketplace App allows African merchants to upload products for sale and view the prices offered by other merchants.</p>
+                                                <ul class="pl-3 .modal-list">
+                                                    <li class="p-1" >As the backend developer, I  created the Heroku deployed RESTful API that is used by the React <a href="https://front-end.bw-african-marketplace.now.sh/" target="_blank" class="web-links">frontend</a> application. Documentation can be found <a href="https://documenter.getpostman.com/view/8666652/SVn3ruoH?version=latest" target="_blank" class="web-links">here</a> and was created using Postman.</li>
+                                                    <li class="p-1">Using Node and Express, endpoints were created for a collection of products and relevant pricing data, allows CRUD operations to be performed on said data, and allows for users to register and log in using protected routers and hashed password encryption.</li>
+                                                    <li class="p-1">During the development phase of the project, the database was created using Knex and SQlite3 but uses PostgreSQL in the production server.</li>
+                                                </ul>
+                                            </div><!-- End Description -->
+                                        </div><!-- End Summary -->
                                     </div><!--End modal-container-->
                                 </div> <!--End Body-->
                                 <!-- Footer -->
@@ -415,7 +404,6 @@
                         </div>
                     </div> <!--End Modal-->
 
-
                     <!-- 4. sleepmood -->
                     <div class="col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -430,7 +418,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- d. sleepmood -->
+                    <!-- d. sleepmood modal -->
                     <div class="modal modal-rel fade" id="slpMood" tabindex="-1" role="dialog" aria-labelledby="sleepMoodeLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -450,35 +438,22 @@
                                                 <img src="images/sleepmood.png" alt="">
                                             </div> 
                                         </div> <!-- End Video -->
-                                        <div class="row d-flex justify-content-center text">
-                                            <!-- Summary -->
-                                            <div class="col-md-7 mt-3 mb-3">
-                                                <h6 class="modal-heading mb-4">Sleep Tracker Application</h6>
-                                                <p>The sleepmood app was created so users could determine how many hours of sleep is best for them through mood tracking. Users track/record the amount of sleep, their moods before/after sleep, as well as there overall mood for that day. This single sleep entry is collated and used to create daily and weekly data visualization views. Once a week of data has been collected, the app will start to give the user the recommended hours of sleep the user needs to be at their best. </p>
-                                            </div> <!--End Summary-->
-                                            <!-- Tech Stack -->
-                                            <div class="col-md-5 mt-3 mb-3 ">
-                                                <h6 class="text-center modal-heading mb-4">Tech Stack</h6>
-                                                <div class="row">
-                                                    <div class="col-md-6 no-pad">
-                                                        <ul class="tech-list">
-                                                            <li>React</li>
-                                                            <li>React-vis</li>
-                                                            <li>React-dom</li>
-                                                            <li>React-calender</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-md-6 no-pad">
-                                                        <ul class="tech-list">
-                                                            <li>Axios</li>
-                                                            <li>Formik</li>
-                                                            <li>Semantic-ui</li>
-                                                            <li>Styled Components</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div> <!--End Tech Stack-->
-                                        </div>
+                                        <!-- Summary -->
+                                        <div class="row d-flex flex-column text-background p-4">
+                                            <div class="modal-heading ">
+                                                <h5>Sleep Tracker Application</h5>
+                                                <p class= "modal-subheading font-weight-normal ">Tech Stack: <span class="font-weight-light font-italic light-teal">React, React-vis, React-big-calendar, Formik, Styled Components, Fontawesome</span></p>
+                                            </div>
+                                            <!-- Description -->
+                                            <div class="modal-description px-4">
+                                                <p>The Sleepmood application was built by a team of one UX designer,three UI, three frontend, and one backend developer(s). The React app enables users to analyze and repair their sleeping habits based purely on their moods during the day, before they go to sleep, and after.</p>
+                                                <ul class="pl-3 .modal-list">
+                                                    <li class="p-1" >As one of the front-end developers, I helped create forms using a combination of the <a href="https://front-end.bw-african-marketplace.now.sh/" target="_blank" class="web-links">Formik</a> library and <a href="https://fontawesome.com/" target="_blank" class="web-links">fontawesome</a> emojis';  allowing users to easily and quickly record their sleep mood data.</li>
+                                                    <li class="p-1">On the users dashboard, a weekly overview of a thier sleep mood data was provided and implemented with the <a href="https://uber.github.io/react-vis/" target="_blank" class="web-links">React-vis </a>library; a react data-visualization library developed by Uber.</li>
+                                                    <li class="p-1">To fit the application's overall aesthetic theme created by our UX designer, <a href="https://uber.github.io/react-vis/" target="_blank" class="web-links">React-big-calendar</a> was customized to allow users to view and edit their sleep mood data from a monthly calendar overview.</li>
+                                                </ul>
+                                            </div><!-- End Description -->
+                                        </div><!-- End Summary -->
                                     </div><!--End modal-container-->
                                 </div> <!--End Body-->
                                 <!-- Footer -->

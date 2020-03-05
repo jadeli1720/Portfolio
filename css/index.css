@@ -39,7 +39,7 @@ h5 {
 p{
   color:  #1B242F;
   font-family: 'Setimo','Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.0rem;
   font-weight: 300;
   letter-spacing: .5px;
   line-height: 30px;
@@ -48,7 +48,7 @@ p{
 ul,li{
   font-family: 'Setimo','Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.0rem;
   line-height: 22px;
 }
 
@@ -153,7 +153,7 @@ nav {
   background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
   background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #1b242f, #182632, #132834);
   border-bottom: 1.5px solid #E31B6D ;
-  font-size: 18px;
+  font-size: 1.0rem;
   -webkit-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
      -moz-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
           box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
@@ -182,7 +182,6 @@ nav {
 
 .navbar-toggler:focus {
   border-color: #E31B6D;
-  outline: 0;
 }
 
 .navbar-toggler-icon:focus {
@@ -286,9 +285,9 @@ nav .nav-item {
   position: absolute;
   border: 1px solid #00a1a7;
   overflow: hidden;
-  width: 80%;
+  width: 85%;
   height: 80%;
-  left: 10%;
+  left: 8%;
   top: 10%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
           transition: opacity 0.35s, transform 0.35s;
@@ -325,7 +324,7 @@ nav .nav-item {
   text-align: center;
   position: relative;
   font-family: 'Setimo','Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 400;
   background-color: transparent;
   color: #FFF;
@@ -337,16 +336,17 @@ nav .nav-item {
   text-align: center;
   position: relative;
   font-family: 'Setimo','Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 300;
   background-color: transparent;
   color: #FFF;
 }
 
+
 .hovereffect button {
   background: rgba(0, 0, 0, 0.6); 
   border:0.1px solid  #55f9ff88;
-  font-size: 14px;
+  font-size: .9rem;
   padding: 5px 15px;
   color: #FFF;
   margin-top: 15px;
@@ -358,6 +358,7 @@ nav .nav-item {
           transform: translate3d(0,100%,0);
 }
 
+
 .hovereffect button:hover {
   border: 0.1px solid  #b8fdff;
   color: #02f7ff;
@@ -368,10 +369,6 @@ nav .nav-item {
   
 }
 
-.hovereffect button:focus {
-  outline: none;
-}
-
 .hovereffect:hover button, .hovereffect:hover h4, .hovereffect:hover h6 {
   
   opacity: 1;
@@ -379,6 +376,51 @@ nav .nav-item {
   text-decoration: none;
   -webkit-transform: translate3d(0,0,0);
           transform: translate3d(0,0,0);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .hovereffect h4{
+    font-size: .85rem;
+    padding: 20px 0 0;;
+  }
+
+  .hovereffect h6 {
+    visibility: hidden;
+  }
+
+  .hovereffect button {
+    margin-top: -10px;
+  }
+
+}
+
+@media(max-width: 480px){
+  .hovereffect h4 {
+    font-size: 1.2rem;
+    padding: 45px 0 0px;
+  }
+
+  .hovereffect h6 {
+    visibility: visible;
+  }
+
+  .hovereffect button {
+    margin-top: 15px;
+  }
+
+}
+
+@media(max-width: 360px){
+  .hovereffect h4 {
+    font-size: 1.2rem;
+    padding: 20px 0 0px;
+  }
+
+  .hovereffect button {
+    margin-top: 15px;
+  }
+
 }
 
 
@@ -612,20 +654,6 @@ nav .nav-item {
     font-size: 15px;
   }
 }
-
-
-
-/* .icon-wrapper {
-  border-radius: 50%;
-  padding-top: 16px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-} */
-
-/* .fa-briefcase, .fa-graduation-cap {
-  font-size:18px; 
-} */
 
 
 /**************CONTACT**************/

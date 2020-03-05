@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 /** 1. Smooth Scrolling
  **************************************************************** **/	
-let scroll = new SmoothScroll('a[href*="#"]', {offset: 30,speed:800});
+let scroll = new SmoothScroll('a[href*="#"]', {offset: 80,speed:2000});
 
 
 /** 2. Active Link -- not working -- skips experience??

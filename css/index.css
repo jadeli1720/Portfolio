@@ -67,7 +67,7 @@ button {
 }
 
 .web-links{
-  color: rgb(245, 20, 114);
+  color: #f51472;
   cursor: pointer;
   font-weight: 500;
   -webkit-transition: all 0.3s ease-in-out;
@@ -78,34 +78,6 @@ button {
 .web-links:hover{
   color: #00A1A7;
   text-decoration: none;
-}
-
-.btn-group {
-  color: white;
-}
-
-.btn {
-  background: #E31B6D;
-  background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
-  border: 1px solid #570124;
-  color: white;
-  cursor: pointer;
-  margin: 40px 30px;
-  padding: 10px;
-  text-transform: uppercase;
-  width: 100px;
-  -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out ;
-
-}
-
-.button-container{
-  color:white;
-  
-}
-
-.button-container:hover{
-  color: #570124
 }
 
 .section-title {
@@ -138,6 +110,78 @@ button {
 
 .no-pad{
   padding: 0px;
+}
+
+.btn-group {
+  color: white;
+}
+
+.btn {
+  background: #E31B6D;
+  background-image: linear-gradient(to bottom, #96013e, #a40546, #b20a4e, #c00f57, #cf1460, #cf1460, #cf1460, #cf1460, #c00f57, #b20a4e, #a40546, #96013e);
+  border: 1px solid #570124;
+  color: white;
+  cursor: pointer;
+  margin: 40px 30px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out ;
+
+}
+
+.button-container{
+  color:white;
+  
+}
+
+.button-container:hover{
+  color: #570124
+}
+
+
+/* Back to top Button */
+
+
+#btnTop{
+  background:  #f51472;
+  border: .5px solid #750130;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .5s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#btnTop i{
+  margin-top: 25%;
+  font-size: 1.4rem;
+}
+
+
+#btnTop:hover{
+  cursor: pointer;
+  background-color: #03bac0;
+  border: .5px solid rgb(0, 136, 141);
+  text-decoration: none;
+}
+
+#btnTop:active{
+  background-color: rgb(4, 40, 61);
+}
+
+#btnTop.show{
+  opacity: 1;
+  visibility: visible;
 }
 
 /**************NAVIGATION**************/
@@ -505,10 +549,11 @@ nav .nav-item {
   border-top: 1px solid rgba(0, 161, 167, 0.281);
 }
 
-.modal-btn i {
+/* background-image: linear-gradient(to bottom, #e31b6d, #d71765, #ca135d, #be0f55, #b20a4e); */
+.modal-btn  {
   background: #E31B6D;
-  background-image: radial-gradient( #cf1460, #c00f57, #b20a4e, #a40546);
-  border: 1px solid #570124;
+  background-image: radial-gradient( #b20a4e, #be0f55, #ca135d, #d71765, #e31b6d);
+  border: .5px solid #8b0038;
   border-radius: 50%;
   color: white;
   font-size: 24px;
@@ -516,11 +561,13 @@ nav .nav-item {
   margin-right: 10px ;
   padding: 15px;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out ;
+  transition: all 0.5s ease-in-out ;
 }
 
 .modal-btn:hover{
-  color: #570124;
+  background:  #6b002b;
+  background-image: radial-gradient( #e31b6d, #d71765, #ca135d, #be0f55, #b20a4e);
+  color: white;
 }
 
 .after_modal_appended {  

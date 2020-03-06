@@ -259,13 +259,11 @@ nav .nav-item {
     height: 100vh;
   }
 
-
 /**************SKILLS**************/
 
 .icons{
   margin: 0px 16px;
 }
-
 
 /**************PORTFOLIO**************/
 
@@ -363,7 +361,6 @@ nav .nav-item {
   -webkit-transform: translate3d(0,100%,0);
           transform: translate3d(0,100%,0);
 }
-
 
 .hovereffect button:hover {
   border: 0.1px solid  #b8fdff;

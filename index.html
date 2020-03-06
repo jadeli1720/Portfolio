@@ -41,17 +41,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- fontAwesome -->
-    <script src="https://kit.fontawesome.com/de25aad685.js"></script>
+    <!-- Animate.CSS and WOW -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js">
+    
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- Fonts: -->
+
+    <!----- Fonts: ----->
     <!-- Adobe: Setimo -->
     <link rel="stylesheet" href="https://use.typekit.net/ehf7hxx.css">
     <!-- Google: Rosario -->
     <link href="https://fonts.googleapis.com/css?family=Rosario:400,500,600,700&display=swap" rel="stylesheet">
-    
-    
 </head>
 
 <body >
@@ -89,38 +90,43 @@
         </nav>
     </header>
     <main role="main" >
+        <!--Back to Top button-->
+        <!-- <a href="#" id="btnTop">
+            <i class="fas fa-angle-up"></i>
+        </a> -->
+
         <!-- Jumbotron -->
         <section class="jumbotron-header ">
             <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center  ">
                 <div class="jumbotron-img  mx-auto">
-                    <img src="images/headshot.png" alt="Jade's headshot" class="rounded-circle headshot">
+                    <img src="images/headshot.png" alt="Jade's headshot" data-wow-duration="3s" class=" wow fadeIn rounded-circle headshot">
                 </div>
                 <div class="header-info mx-auto text-center ">
-                    <h1>J<span class="uppercase">ade</span> L<span class="uppercase">opez</span></h1>
-                    <h4>Full Stack Web Developer <br> &amp; <br> Web Designer</h4>
+                    <h1 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInDown">J<span class="uppercase">ade</span> L<span class="uppercase">opez</span></h1>
+                    <h4 data-wow-duration="1s" data-wow-delay="1s" class="wow fadeInDown" >Full Stack Web Developer <br> &amp; <br> Web Designer</h4>
                 </div>
                 <div class="button-container mx-auto" aria-label="Resume Button">
-                    <a href="./assests/jlopez_resume.pdf" target="_blank" class="btn uppercase">Resume</a>
+                    <a href="./assests/jlopez_resume.pdf" target="_blank" data-wow-duration="1s" data-wow-delay="1.5s" class=" wow fadeIn btn uppercase">Resume</a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About -->
         <!-- May want to change. Put basic info at the bottom in contact area? -->
         <section class="mx-auto mb-5" id="about">
-            <h1 class="text-center mb-5 section-title">About Me</h1>
-            <div class="card container section-margin">
+            <h1 data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInDown text-center mb-5 section-title ">About Me</h1>
+            <div data-wow-duration="1s" data-wow-delay="1.5s" class=" wow fadeInLeft card container section-margin  ">
                 <div class="row">
                     <div class="col-lg-12 px-4">
-                        <h2 class="card-title text-center mt-4">Web Developer, Designer, Musician, Trekkie </h2>
+                        <h2 data-wow-duration="1s" data-wow-delay="2s" class="wow fadeIn card-title text-center mt-4">Web Developer, Designer, Musician, Trekkie </h2>
                         <!-- NEED TO EDIT!!!!! Tell a story with interesting facts musical, dancing, random facts...personalize it! -->
-                        <div class="card-body">
-                            <p>Hello! I am a Graphic Designer/Web Developer who enjoys being immersed in a creatively charged atmosphere,  is passionate about design, and learning new technologies. I recently graduated from the Full-Stack Web Development course track at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda School</a>, where I have gained experience with HTML, CSS, JavaScript, React.js, Node.js, Knex.js, and more. 
+                        <div card-body">
+                            <p data-wow-duration="1s" data-wow-delay="2.2s" class="wow fadeIn">Hello! I am a Graphic Designer/Web Developer who enjoys being immersed in a creatively charged atmosphere,  is passionate about design, and learning new technologies. I recently graduated from the Full-Stack Web Development course track at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda School</a>, where I have gained experience with HTML, CSS, JavaScript, React.js, Node.js, Knex.js, and more. 
                             
                             </p>
-                            <p>These experiences, along with working 14 years in the customer service industry, have taught me creative problem-solving and effective communication skills as well as how to work in teams.  Personally, it is my goal to constantly push myself to learn new things so that I may grow as a designer, developer, and as an individual.
+                            <p data-wow-duration="1s" data-wow-delay="2.5s" class="wow fadeIn">These experiences, along with working 14 years in the customer service industry, have taught me creative problem-solving and effective communication skills as well as how to work in teams.  Personally, it is my goal to constantly push myself to learn new things so that I may grow as a designer, developer, and as an individual.
                             </p>
-                            <p>Outside of web development, I love to do anything that engages my creativity. This includes anything from singing/playing/listening to the music of all genres, cooking, and drawing. I also have an obsession with Assassin's Creed and love everything Star Trek!</p>
+                            <p data-wow-duration="1s" data-wow-delay="2.8s" class="wow fadeIn">Outside of web development, I love to do anything that engages my creativity. This includes anything from singing/playing/listening to the music of all genres, cooking, and drawing. I also have an obsession with Assassin's Creed and love everything Star Trek!</p>
                         </div>
                     </div>
                 </div>
@@ -130,97 +136,97 @@
         <!-- Skills -->
         <!-- Need to add node.js , python, and django -->
         <section class=" mb-5" id="skills">
-            <h1 class="text-center my-5 section-title">Skills</h1>
+            <h1 data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInDown text-center my-5 section-title">Skills</h1>
             <div class="section-margin">
                 <!-- Web Dev -->
-                <div class=" container card mb-5">
-                    <h2 class="card-title text-center my-5"> Web Development</h2>
+                <div data-wow-duration="1s" data-wow-delay="1.5s" class=" wow fadeInRight  container card mb-5">
+                    <h2 data-wow-duration="1s" data-wow-delay="2s" class="wow fadeIn card-title text-center my-5"> Web Development</h2>
                     <div class=" d-flex justify-content-around flex-wrap col-lg-12">
                         <div class="flex-column text-center m-3 icon">
                             <!-- HTML -->
-                            <img class="icons" src="./images/HTML5.png" alt="Html 5 logo">
-                            <p class="mt-3 mb-4">HTML 5</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/HTML5.png" alt="Html 5 logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">HTML 5</p>
                         </div>
                         <!-- CSS -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/CSS3.png" alt="Css 3 logo">
-                            <p class="mt-3 mb-4">CSS 3</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/CSS3.png" alt="Css 3 logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">CSS 3</p>
                         </div>
                         <!-- JS -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/javaScript.png" alt="Javascript Logo">
-                            <p class="mt-3 mb-4">JavaScript</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/javaScript.png" alt="Javascript Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">JavaScript</p>
                         </div>
                         <!-- Bootstrap -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/bootstrap.png" alt="Bootstrap Logo">
-                            <p class="mt-3 mb-4">Bootstrap</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/bootstrap.png" alt="Bootstrap Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">Bootstrap</p>
                         </div>
                         <!-- React -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/react-dark.png" alt="React Logo">
-                            <p class="mt-3 mb-4">React</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/react-dark.png" alt="React Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">React</p>
                         </div>
                         <!-- Node -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/nodeJS.png" alt="Node.js Logo">
-                            <p class="mt-3 mb-4">Node.js</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/nodeJS.png" alt="Node.js Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">Node.js</p>
                         </div>
                         <!-- Python -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/python.png" alt="Python Logo">
-                            <p class="mt-3 mb-4">Python</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/python.png" alt="Python Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">Python</p>
                         </div>
                         <!-- SQL -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/sqlite.png" alt="SQLite Logo">
-                            <p class="mt-3 mb-4">SQLite3</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/sqlite.png" alt="SQLite Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">SQLite3</p>
                         </div>
                         <!-- Sass -->
                         <div class="flex-column text-center m-3 icons second-row">
-                            <img class="icons" src="./images/sass_logo.png" alt="Sass Logo">
-                            <p class="mt-3 mb-4">Sass</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/sass_logo.png" alt="Sass Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">Sass</p>
                         </div>
                         <!-- Less -->
                         <div class="flex-column text-center m-3 icons second-row">
-                            <img class="icons" src="./images/less.png" alt="Less Logo">
-                            <p class="mt-3 mb-4">Less</p>
+                            <img data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInRight icons" src="./images/less.png" alt="Less Logo">
+                            <p data-wow-duration="1s" data-wow-delay="2.1s" class="wow fadeInLeft mt-3 mb-4">Less</p>
                         </div>  
                     </div>
                 </div>
                 <!-- Graphic and Web Software -->
-                <div class="container card " id="Software">
-                    <h2 class="card-title text-center my-5"> Graphic and Web Software</h2>
+                <div data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInLeft container card " id="Software">
+                    <h2 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeIn card-title text-center my-5"> Graphic and Web Software</h2>
                     <div class="d-flex justify-content-around flex-wrap">
                         <!-- Photoshop -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/photoshop.png" alt="Adobe Photoshop logo">
-                            <p class="mt-3 mb-4">Photoshop</p>
+                            <img data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInLeft icons" src="./images/photoshop.png" alt="Adobe Photoshop logo">
+                            <p data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInRight mt-3 mb-4">Photoshop</p>
                         </div>
                         <!-- Illustrator -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/Illustrator.png" alt="Adobe Illustrator logo">
-                            <p class="mt-3 mb-4">Illustrator</p>
+                            <img data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInLeft icons" src="./images/Illustrator.png" alt="Adobe Illustrator logo">
+                            <p data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInRight mt-3 mb-4">Illustrator</p>
                         </div>
                         <!-- Indesign -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/indesign.png" alt="Adobe InDesign Logo">
-                            <p class="mt-3 mb-4">InDesign</p>
+                            <img data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInLeft icons" src="./images/indesign.png" alt="Adobe InDesign Logo">
+                            <p data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInRight mt-3 mb-4">InDesign</p>
                         </div>
                         <!-- Dreamweaver -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/dreamweaver.png" alt="Adobe DreamWeaver logo">
-                            <p class="mt-3 mb-4">DreamWeaver</p>
+                            <img data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInLeft icons" src="./images/dreamweaver.png" alt="Adobe DreamWeaver logo">
+                            <p data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInRight mt-3 mb-4">DreamWeaver</p>
                         </div>
                         <!-- XD -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/adobe-xd.png" alt="Adobe XD logo">
-                            <p class="mt-3 mb-4">Adobe XD</p>
+                            <img data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInLeft icons" src="./images/adobe-xd.png" alt="Adobe XD logo">
+                            <p data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInRight mt-3 mb-4">Adobe XD</p>
                         </div>
                         <!-- VS Code -->
                         <div class="flex-column text-center m-3 icons">
-                            <img class="icons" src="./images/vs_code.png" alt="Visual Studio Code Logo">
-                            <p class="mt-3 mb-4">VS Code</p>
+                            <img data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInLeft icons" src="./images/vs_code.png" alt="Visual Studio Code Logo">
+                            <p data-wow-duration="1s" data-wow-delay="1.7s" class="wow fadeInRight mt-3 mb-4">VS Code</p>
                         </div>
                     </div>
 
@@ -232,11 +238,11 @@
         <!-- Portfolio -->
         <!-- CHANGE IMAGES!! ==> cards: logos with picture backgrounds or website on laptop or phone...modals need some sort of images as well or do videos/GIF's -->
         <section class=" mb-5" id="portfolio">
-            <h1 class="text-center my-5 section-title">Portfolio</h1>
+            <h1 data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInDown text-center my-5 section-title">Portfolio</h1>
             <div class="section-margin">
                 <div class="container row  mx-auto">
                     <!-- 1. CyberPunk Mud -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/cypberpunk.png"
@@ -302,7 +308,7 @@
                     </div> <!--End Modal-->
 
                     <!-- 2. SafeMothers -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/safeMothers.png"
@@ -368,7 +374,7 @@
                     </div> <!--End Modal-->
                     
                     <!-- 3. African Marketplace -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/africanMarket.gif"
@@ -433,7 +439,7 @@
                     </div> <!--End Modal-->
 
                     <!-- 4. sleepmood -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/sleepmood.png"
@@ -498,7 +504,7 @@
                     </div> <!--End Modal-->
 
                     <!-- 5. Rick & Morty  -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/rickMorty.png"
@@ -566,7 +572,7 @@
 
                     <!-- 6.  Wedding Gram -->
                     <!-- Need to fix some of the site links -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/buildWeekOne.png"
@@ -632,7 +638,7 @@
                     </div> <!--End Modal-->
 
                     <!--7. Bella Tea Room -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/landingPage.png"
@@ -696,7 +702,7 @@
 
                     <!-- 8. 5150whips -->
                     <!-- Free domain is not working. Will need to change hosting sites -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 port">
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/5150whips.png" alt="5150Whips Landing Page picture">
@@ -764,31 +770,31 @@
 
         <!-- Experience -->
         <section class=" mb-5" id="experience">
-            <h1 class="text-center my-5 section-title">Experience</h1>
+            <h1 data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInDown text-center my-5 section-title">Experience</h1>
             <div class="section-margin">
                 <!-- Work Experience -->
-                <div class=" container card mt-5 px-4 pb-5">
-                    <h2 class="text-center card-title mt-5 ">Work</h2>
+                <div data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInUp  container card mt-5 px-4 pb-5">
+                    <h2 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeIn text-center card-title mt-5 ">Work</h2>
                     <div class="timeline-block mt-3">
                         <!-- 1 -->
                         <div class="row no-gutters ">
                             <div class="timeline"></div>
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>Riders For Life</h4>
-                                    <p>Oct 2019 - Nov 2019</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeInLeftBig">Riders For Life</h4>
+                                    <p data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeInLeftBig">Oct 2019 - Nov 2019</p>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-briefcase  "></i>
+                                <div data-wow-duration="1s" data-wow-delay="1.5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeIn fas fa-briefcase "></i>
                                 </div>
                             </div>
 
                             <div class="col-md-8 col-sm-10 right-timeline ">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Web Developer</h4>
-                                    <p>This was a two-part application built for the non-profit Safe Mothers, Safe Babies. The first part was a Node backend that interacted with Frontline SMS and allowed for emergency SMS interaction between users. The React frontend, and the second part of the application, was developed as an admin dashboard that allowed administrators to view, add, delete, and edit user data.
+                                    <h4 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeInRightBig">Web Developer</h4>
+                                    <p data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeInRightBig">This was a two-part application built for the non-profit Safe Mothers, Safe Babies. The first part was a Node backend that interacted with Frontline SMS and allowed for emergency SMS interaction between users. The React frontend, and the second part of the application, was developed as an admin dashboard that allowed administrators to view, add, delete, and edit user data.
                                     </p>
                                 </div>
                             </div>
@@ -797,20 +803,20 @@
                         <div class="row no-gutters ">
                             <div class="col-md-3 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>5150Whips</h4>
-                                    <p>2018 - 2019</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeInLeftBig">5150Whips</h4>
+                                    <p data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeInLeftBig">2018 - 2019</p>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-briefcase"></i>
+                                <div data-wow-duration="1s" data-wow-delay="1.5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeIn fas fa-briefcase"></i>
                                 </div>
                             </div>
 
                             <div class="col-md-8 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Web Developer & Designer</h4>
-                                    <p>Hired by 5150 whips to fix, maintain, and make updates to the current website. Worked with the owner to create a new website to fit his business needs, company brand, and design aesthetic.
+                                    <h4 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeInRightBig">Web Developer & Designer</h4>
+                                    <p data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeInRightBig">Hired by 5150 whips to fix, maintain, and make updates to the current website. Worked with the owner to create a new website to fit his business needs, company brand, and design aesthetic.
                                     </p>
                                 </div>
                             </div>
@@ -819,19 +825,19 @@
                         <div class="row no-gutters ">
                             <div class="col-md-3 left-timeline ">
                                 <div class=" card-body d-flex flex-column left-wrapper ">
-                                    <h4>Cryptocurrency</h4>
-                                    <p>Nov 2017 - Jan 2018</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeInLeftBig">Cryptocurrency</h4>
+                                    <p data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeInLeftBig">Nov 2017 - Jan 2018</p>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-briefcase "></i>
+                                <div data-wow-duration="1s" data-wow-delay="1.5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeIn fas fa-briefcase "></i>
                                 </div>
                             </div>
                             <div class="col-md-8 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Graphic Designer</h4>
-                                    <p>Designed a Art Deco-inspired cover for a company booklet presentation explaining cryptocurrency, mining cryptocurrency, and how to build and operate a cryptocurrency mining rig.</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeInRightBig">Graphic Designer</h4>
+                                    <p data-wow-duration="1s" data-wow-delay="1.6s" class="wow fadeInRightBig">Designed a Art Deco-inspired cover for a company booklet presentation explaining cryptocurrency, mining cryptocurrency, and how to build and operate a cryptocurrency mining rig.</p>
                                 </div>
                             </div>
                         </div>
@@ -839,45 +845,45 @@
                         <div class="row no-gutters ">
                             <div class="col-md-3 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>12am Miscreants</h4>
-                                    <p>May 2017</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">12am Miscreants</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">May 2017</p>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-briefcase "></i>
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-briefcase "></i>
                                 </div>
                             </div>
                             <div class="col-md-8 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Graphic Designer</h4>
-                                    <p>Created and designed the logo and branding for a "Let's Play" style YouTube page called 12am Miscreants. Designed a central logo to be used in all collateral materials and combined it with their YouTube banner I designed as well.</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Graphic Designer</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Created and designed the logo and branding for a "Let's Play" style YouTube page called 12am Miscreants. Designed a central logo to be used in all collateral materials and combined it with their YouTube banner I designed as well.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- School Experience -->
-                <div class="container card mt-5 px-4 pb-5">
-                    <h2 class="text-center card-title mt-5 ">Education</h2>
+                <div data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInUp container card mt-5 px-4 pb-5">
+                    <h2 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeIn text-center card-title mt-5 ">Education</h2>
                     <div class="timeline-block mt-3">
                         <!-- 1 -->
                         <div class="row no-gutters">
                             <div class="timeline"></div>
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>2019 - Present</h4>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">2019 - Present</h4>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-graduation-cap"></i>
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-graduation-cap"></i>
                                 </div>
                             </div>
                             <div class="col-md-8 col-sm-10 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Lambda School</h4>
-                                    <p>Full Stack Web Developer</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Lambda School</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInRightBig">Full Stack Web Developer</p>
                                 </div>
                             </div>
                         </div>
@@ -885,18 +891,18 @@
                         <div class="row no-gutters">
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>2016 - 2019</h4>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">2016 - 2019</h4>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper ">
-                                    <i class="fas fa-graduation-cap "></i>
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-graduation-cap "></i>
                                 </div>
                             </div>
                             <div class="col-md-8 col-sm-10 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Foothill College</h4>
-                                    <p>AA in Graphic &amp; Interactive Design</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Foothill College</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInRightBig">AA in Graphic &amp; Interactive Design</p>
                                 </div>
                             </div>
                         </div>
@@ -904,18 +910,18 @@
                         <div class="row no-gutters">
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>2007 - 2010</h4>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">2007 - 2010</h4>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper ">
-                                    <i class="fas fa-graduation-cap "></i>
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-graduation-cap "></i>
                                 </div>
                             </div>
                             <div class="col-md-8 col-sm-10 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>San Francisco State University</h4>
-                                    <p>Music - Vocal Performance in Opera</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">San Francisco State University</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInRightBig">Music - Vocal Performance in Opera</p>
                                 </div>
                             </div>
                         </div>
@@ -923,18 +929,18 @@
                         <div class="row no-gutters">
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>2001 - 2007</h4>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">2001 - 2007</h4>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-graduation-cap  "></i>
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-graduation-cap  "></i>
                                 </div>
                             </div>
                             <div class="col-md-8 col-sm-10 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Riverside Community College</h4>
-                                    <p>Associate in Science</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Riverside Community College</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInRightBig">Associate in Science</p>
                                 </div>
                             </div>
                         </div>
@@ -942,18 +948,18 @@
                         <div class="row no-gutters">
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
-                                    <h4>1997 - 2001</h4>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">1997 - 2001</h4>
                                 </div>
                             </div>
                             <div class="col-md-1 icon-timeline">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-graduation-cap "></i>
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-graduation-cap "></i>
                                 </div>
                             </div>
                             <div class="col-md-8 right-timeline">
                                 <div class=" card-body d-flex flex-column right-wrapper">
-                                    <h4>Redlands East Valley Highschool</h4>
-                                    <p>Highschool Diploma</p>
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Redlands East Valley Highschool</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInRightBig">Highschool Diploma</p>
                                 </div>
                             </div>
                         </div>
@@ -964,12 +970,12 @@
         
         <!-- Contact -->
         <section id="contact">
-            <h1 class="text-center my-5 section-title">Contact Me</h1>
+            <h1 data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInDown text-center my-5 section-title">Contact Me</h1>
             <div class="contact-margin">
-                <div class="container card " id="contact-card">
+                <div data-wow-duration="1.5s" data-wow-delay="1.5s" class=" wow zoomIn container card " id="contact-card">
                     <div class="mx-auto mt-4">
-                        <h2 class="contact-title text-center">Let's Get Started</h2>
-                        <p class="mt-2">Have questions or just want to say hello? Drop me a line bellow!
+                        <h2 data-wow-duration="1.5s" data-wow-delay="2s" class=" wow fadeInLeftBig contact-title text-center">Let's Get Started</h2>
+                        <p data-wow-duration="1.5s" data-wow-delay="2s" class=" wow fadeInRightBig mt-2">Have questions or just want to say hello? Drop me a line bellow!
                         </p>
                     </div>
                     <!-- Need to center. May not need form-container -->
@@ -980,27 +986,27 @@
                                     <!-- <p class="hidden">
                                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                                     </p> -->
-                                    <label for="newName">Name:</label>
-                                    <input type="text" id="newName" name="newName" class="form-control form-control-lg"
+                                    <label  for="newName" data-wow-duration="1.5s" data-wow-delay="2.8s" class=" wow flipInX">Name:</label>
+                                    <input type="text" id="newName" name="newName" data-wow-duration="1.5s" data-wow-delay="1.5s" class=" wow flipInX form-control form-control-lg"
                                         placeholder="Your name..." aria-placeholder="Your name..." required>
                                     <div class="valid-feedback">Looks good! Thanks.</div>
                                     <div class="invalid-feedback">Opps! I need a name please. Try again.</div>
                                 </div>
                                 <div class="form-group col-md-12 bottom-margin ">
-                                    <label for="newEmail">Email:</label>
-                                    <input type="text" id="newEmail" name="newEmail" class="form-control form-control-lg"
+                                    <label for="newEmail" data-wow-duration="1.5s" data-wow-delay="2.8s" class=" wow flipInX">Email:</label>
+                                    <input type="text" id="newEmail" name="newEmail" data-wow-duration="1.5s" data-wow-delay="1.5s" class=" wow flipInX form-control form-control-lg"
                                         placeholder="example@email.com" aria-placeholder="example@email.com" required>
                                         <div class="valid-feedback">Looks good! Thanks. </div>
                                         <div class="invalid-feedback">Opps! I need a email please. Try again.</div>
                                 </div>
                                 <div class="form-group col-md-12 bottom-margin ">
-                                    <label for="newPhone">Phone:</label>
-                                    <input type="text" id="newPhone" name="newPhone" class="form-control form-control-lg"
+                                    <label for="newPhone" data-wow-duration="1.5s" data-wow-delay="2.8s" class=" wow flipInX">Phone:</label>
+                                    <input type="text" id="newPhone" name="newPhone" data-wow-duration="1.5s" data-wow-delay="1.5s" class=" wow flipInX form-control form-control-lg"
                                         placeholder="(123)-456-7890" aria-placeholder="(123)-456-7890">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="newMessage">Message:</label>
-                                    <textarea class="form-control" name="newMessage" id="newMessage" cols="30" rows="5"
+                                    <label for="newMessage" data-wow-duration="1.5s" data-wow-delay=".5s" class=" wow flipInX">Message:</label>
+                                    <textarea data-wow-duration="1.5s" data-wow-delay="1.5s" class=" wow flipInX form-control" name="newMessage" id="newMessage" cols="30" rows="5"
                                     placeholder="Your message..." aria-placeholder="Your message..." required>
                                     </textarea>
                                     <div class="valid-feedback">Looks good! Thanks. </div>
@@ -1009,7 +1015,7 @@
                                 <div data-netlify-recaptcha="true"></div>
                             </div>
                             <div class="button-container d-flex justify-content-center">
-                                <button class="btn text-center" type="submit">Submit</button>
+                                <button data-wow-duration="1s" data-wow-delay=".5s" class=" wow fadeIn btn text-center" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -1019,6 +1025,7 @@
     </main>
     <!-- Bottom icons need to change. animation/transition/pulse/pink -->
     <footer>
+        <i  ></i>
         <div class="container ">
             <div class="row justify-content-between " >
                 <div class="col-md-3 col-sm-12 ">
@@ -1060,9 +1067,9 @@
 
     <!-- Bootstrap Core Javascript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -1072,6 +1079,12 @@
 
     <!-- Smooth Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+    
+    <!-- Wow js -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/de25aad685.js"></script>
 
     <!--Custom js -->	
     <script src="./js/index.js"></script>

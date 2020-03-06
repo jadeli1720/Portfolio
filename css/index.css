@@ -254,6 +254,12 @@ nav .nav-item {
   margin: 20px 0 0px;
 }
 
+/**************ABOUT**************/
+  #about{
+    height: 100vh;
+  }
+
+
 /**************SKILLS**************/
 
 .icons{

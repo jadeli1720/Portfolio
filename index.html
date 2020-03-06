@@ -43,11 +43,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Animate.CSS and WOW -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js">
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/de25aad685.js"></script>
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- Fonts: -->
+
+    <!----- Fonts: ----->
     <!-- Adobe: Setimo -->
     <link rel="stylesheet" href="https://use.typekit.net/ehf7hxx.css">
     <!-- Google: Rosario -->
@@ -93,34 +95,34 @@
         <section class="jumbotron-header ">
             <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center  ">
                 <div class="jumbotron-img  mx-auto">
-                    <img src="images/headshot.png" alt="Jade's headshot" class="rounded-circle headshot">
+                    <img src="images/headshot.png" alt="Jade's headshot" data-wow-duration="3s" class=" wow fadeIn rounded-circle headshot">
                 </div>
                 <div class="header-info mx-auto text-center ">
-                    <h1>J<span class="uppercase">ade</span> L<span class="uppercase">opez</span></h1>
-                    <h4>Full Stack Web Developer <br> &amp; <br> Web Designer</h4>
+                    <h1 data-wow-duration="2s" data-wow-delay=".5s" class="wow fadeInDown">J<span class="uppercase">ade</span> L<span class="uppercase">opez</span></h1>
+                    <h4 data-wow-duration="2s" data-wow-delay="1s" class="wow fadeInDown" >Full Stack Web Developer <br> &amp; <br> Web Designer</h4>
                 </div>
                 <div class="button-container mx-auto" aria-label="Resume Button">
-                    <a href="./assests/jlopez_resume.pdf" target="_blank" class="btn uppercase">Resume</a>
+                    <a href="./assests/jlopez_resume.pdf" target="_blank" data-wow-duration="2s" data-wow-delay="2s" class=" wow fadeIn btn uppercase">Resume</a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About -->
         <!-- May want to change. Put basic info at the bottom in contact area? -->
         <section class="mx-auto mb-5" id="about">
-            <h1 class="text-center mb-5 section-title">About Me</h1>
-            <div class="card container section-margin">
+            <h1 data-wow-duration="2s" data-wow-delay="2s" class="text-center mb-5 section-title wow fadeInDown">About Me</h1>
+            <div data-wow-duration="2s" data-wow-delay="3s" class="card container section-margin wow fadeInLeft ">
                 <div class="row">
                     <div class="col-lg-12 px-4">
-                        <h2 class="card-title text-center mt-4">Web Developer, Designer, Musician, Trekkie </h2>
+                        <h2 data-wow-duration="2s" data-wow-delay="5s" class="wow fadeIn card-title text-center mt-4">Web Developer, Designer, Musician, Trekkie </h2>
                         <!-- NEED TO EDIT!!!!! Tell a story with interesting facts musical, dancing, random facts...personalize it! -->
-                        <div class="card-body">
-                            <p>Hello! I am a Graphic Designer/Web Developer who enjoys being immersed in a creatively charged atmosphere,  is passionate about design, and learning new technologies. I recently graduated from the Full-Stack Web Development course track at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda School</a>, where I have gained experience with HTML, CSS, JavaScript, React.js, Node.js, Knex.js, and more. 
+                        <div card-body">
+                            <p data-wow-duration="2s" data-wow-delay="5.5s" class="wow fadeIn">Hello! I am a Graphic Designer/Web Developer who enjoys being immersed in a creatively charged atmosphere,  is passionate about design, and learning new technologies. I recently graduated from the Full-Stack Web Development course track at <a class="web-links" href="https://lambdaschool.com/" target="_blank">Lambda School</a>, where I have gained experience with HTML, CSS, JavaScript, React.js, Node.js, Knex.js, and more. 
                             
                             </p>
-                            <p>These experiences, along with working 14 years in the customer service industry, have taught me creative problem-solving and effective communication skills as well as how to work in teams.  Personally, it is my goal to constantly push myself to learn new things so that I may grow as a designer, developer, and as an individual.
+                            <p data-wow-duration="2s" data-wow-delay="6.2s" class="wow fadeIn">These experiences, along with working 14 years in the customer service industry, have taught me creative problem-solving and effective communication skills as well as how to work in teams.  Personally, it is my goal to constantly push myself to learn new things so that I may grow as a designer, developer, and as an individual.
                             </p>
-                            <p>Outside of web development, I love to do anything that engages my creativity. This includes anything from singing/playing/listening to the music of all genres, cooking, and drawing. I also have an obsession with Assassin's Creed and love everything Star Trek!</p>
+                            <p data-wow-duration="2s" data-wow-delay="7.1s" class="wow fadeIn">Outside of web development, I love to do anything that engages my creativity. This includes anything from singing/playing/listening to the music of all genres, cooking, and drawing. I also have an obsession with Assassin's Creed and love everything Star Trek!</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +132,7 @@
         <!-- Skills -->
         <!-- Need to add node.js , python, and django -->
         <section class=" mb-5" id="skills">
-            <h1 class="text-center my-5 section-title">Skills</h1>
+            <h1 data-wow-duration="2s" data-wow-delay="1s" class=" wow fadeInDown text-center my-5 section-title">Skills</h1>
             <div class="section-margin">
                 <!-- Web Dev -->
                 <div class=" container card mb-5">
@@ -1072,6 +1074,9 @@
 
     <!-- Smooth Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+    
+    <!-- Wow js -->
+    <script src="js/wow.min.js"></script>
 
     <!--Custom js -->	
     <script src="./js/index.js"></script>

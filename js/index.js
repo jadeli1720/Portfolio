@@ -1,32 +1,34 @@
 $(document).ready(function() {
 
-
-/** 1. Smooth Scrolling
+/** 1. Intiate wow js
  **************************************************************** **/	
-let scroll = new SmoothScroll('a[href*="#"]', {offset: 80,speed:2000});
+  new WOW().init();
 
-
-/** 2. Active Link -- not working -- skips experience??
+/** 2. Smooth Scrolling
  **************************************************************** **/	
-$(window).scroll(function() {
-    
-    let scrollLink = $('.scroll-link')
+  let scroll = new SmoothScroll('a[href*="#"]', {offset: 80,speed:2000});
 
-    let scrollbarLocation = $(this).scrollTop();
 
-    scrollLink.each(function() {
+/** 3. Active Link -- not working -- skips experience??
+ **************************************************************** **/	
+  $(window).scroll(function() {
       
-      let sectionOffset = $(this.hash).offset().top - 325;
-      
-      if ( sectionOffset <= scrollbarLocation ) {
-        $(this).parent().addClass('active') ;
-        $(this).parent().siblings().removeClass('active') ;
-      }
+      let scrollLink = $('.scroll-link')
+
+      let scrollbarLocation = $(this).scrollTop();
+
+      scrollLink.each(function() {
+        
+        let sectionOffset = $(this.hash).offset().top - 325;
+        
+        if ( sectionOffset <= scrollbarLocation ) {
+          $(this).parent().addClass('active') ;
+          $(this).parent().siblings().removeClass('active') ;
+        }
+      })
     })
-    
-  })
 
-  /** 3. Navbar toggle icon  --> 
+  /** 4. Navbar toggle icon  --> 
  **************************************************************** **/	
   $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
@@ -34,9 +36,8 @@ $(window).scroll(function() {
 
 
 
-  /** 4. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. Page moves to top and then back down when modal is first open. After that, every other modal has slight page movement
+  /** 5. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. 
  **************************************************************** **/	
-// Not a great solution. Look for something else
   
   $("body").on("click",".modalClick",function(){
     
@@ -49,38 +50,38 @@ $(window).scroll(function() {
     //removes the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
     // $('body').removeClass("modal-open")
     //   $('body').css("padding-right","");     
-});
+  });
 
 
-// Stops video from playing once modal is closed 
-$('#sfmModal').on('hidden.bs.modal', function(e) {
-  $('#sfmModal iframe').attr("src", $('#sfmModal iframe').attr('src'));
-});
+  // Stops video from playing once modal is closed 
+  $('#sfmModal').on('hidden.bs.modal', function(e) {
+    $('#sfmModal iframe').attr("src", $('#sfmModal iframe').attr('src'));
+  });
 
 //The code below will allows the modal to stay open for design and editing. Just change the modal id. Comment out when finished.
 // $('#fiftyWhips').modal('toggle')
 
 
-/** 5. Bootstrap Form Validation --> 
+/** 6. Bootstrap Form Validation --> Do we need?
  **************************************************************** **/	
 
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    let forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    let validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      let forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      let validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 
 
 })

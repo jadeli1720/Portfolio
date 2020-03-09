@@ -62,9 +62,9 @@ button {
 }
 
 
-.hidden {
+/* .hidden {
   visibility: hidden;
-}
+} */
 
 .web-links{
   color: #f51472;
@@ -184,6 +184,178 @@ button {
   visibility: visible;
 }
 
+/**************Loading Spinner**************/
+
+/***LOADER BACKGROUND***/
+.overlay{
+  background: #1B242F;
+  background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #182632, #132834);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+/***LOADER CONTAINER***/
+.loader {
+  position: absolute;
+  top: 38%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+/***OUTER PINK CIRCLE***/
+.outer-circle{
+  width: 225px;
+  height: 225px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.5px #052d37 solid;
+  background: #f51472;
+  background: linear-gradient(
+    0deg,
+    rgba(245, 20, 114, 0.15) 33%,
+    rgba(245, 20, 114, 1) 100%
+  );
+  animation: spin 1.3s linear 0s infinite;
+}
+
+/***TEXT CONTAINER***/
+.center{
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  top: 5px;
+  left:5px;
+  background: #1B242F;
+  background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
+  background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom, #182632, #132834);
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+ /***TEXT***/
+.center span{
+  position: absolute;
+  top: 37%;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  animation: flash 1.3s linear 0s infinite;
+}
+
+/***HIDDING LOADER***/
+.overlay.hidden{
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+  min-width: 0vw;
+  min-height: 0vh; 
+
+}
+
+/***OUTER CIRCLE ANIMATION***/
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/***TEXT ANIMATION***/
+@-webkit-keyframes flash { 
+  from { opacity: 1 }
+  50% { opacity: 0 }
+  to { opacity: 1 } 
+}
+
+@-moz-keyframes flash { 
+  from { opacity: 1 }
+  50% { opacity: 0 }
+  to { opacity: 1 } 
+}
+
+@-o-keyframes flash { 
+  from { opacity: 1 }
+  50% { opacity: 0 }
+  to { opacity: 1 } 
+}
+
+@keyframes flash { 
+  from { opacity: 1 }
+  50% { opacity: 0 }
+  to { opacity: 1 } 
+}
+
+/***HIDDING LOADER ANIMATION***/
+@-webkit-keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@-moz-keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@-o-keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 /**************NAVIGATION**************/
 
 header {
@@ -201,7 +373,6 @@ nav {
   -webkit-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
      -moz-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
           box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
-
 }
 
 .navbar-toggler{
@@ -270,6 +441,7 @@ nav .nav-item {
 }
 
 .jumbotron-img {
+  
   margin: 20px;
 }
 

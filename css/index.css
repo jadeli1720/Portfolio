@@ -62,9 +62,9 @@ button {
 }
 
 
-.hidden {
+/* .hidden {
   visibility: hidden;
-}
+} */
 
 .web-links{
   color: #f51472;
@@ -186,19 +186,28 @@ button {
 
 /**************Loading Spinner**************/
 
-.overlay {
+.overlay{
   background: #1B242F;
   background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
   background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #182632, #132834);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
 }
 
-.circle-border {
-  width: 150px;
-  height: 150px;
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-border{
+  width: 200px;
+  height: 200px;
   padding: 3px;
   display: flex;
   justify-content: center;
@@ -223,9 +232,11 @@ button {
 }
 
 .content{
-  width: 143px;
-  height: 143px;
+  width: 190px;
+  height: 190px;
   position: absolute;
+  top: 5px;
+  left:5px;
   background: #1B242F;
   background-image: linear-gradient(to bottom, #1b242f, #182632, #132834, #0d2b36, #052d37);
   background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom, #182632, #132834);
@@ -233,6 +244,15 @@ button {
   -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
   -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
+  z-index: 3;
+}
+
+.overlay.hidden{
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+  min-width: 0vw;
+  min-height: 0vh; 
+
 }
 
 @keyframes spin {
@@ -243,6 +263,14 @@ button {
     transform: rotate(359deg);
   }
 }
+
+@keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 
 /**************NAVIGATION**************/
 
@@ -261,7 +289,6 @@ nav {
   -webkit-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
      -moz-box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
           box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.65);
-
 }
 
 .navbar-toggler{

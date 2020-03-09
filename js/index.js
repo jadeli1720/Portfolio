@@ -1,11 +1,21 @@
-$(document).ready(function () {
 
-  /** 1. Intiate wow js
+$(document).ready(function () {
+  /** 1. Loader Spinner
+   **************************************************************** **/
+  window.addEventListener("load" , function() {
+	
+    const loader = document.querySelector(".overlay");
+    
+    loader.className += " hidden"; //class will change to "overlay hidden"
+    
+  });
+
+  /** 2. Intiate wow js
    **************************************************************** **/
   new WOW().init();
 
 
-  /** 1. Back to Top" Button
+  /** 3. Back to Top" Button
    **************************************************************** **/
   let btn = $('#btnTop');
 
@@ -23,12 +33,12 @@ $(document).ready(function () {
   });
 
 
-  /** 2. Smooth Scrolling
+  /** 4. Smooth Scrolling
    **************************************************************** **/
   let scroll = new SmoothScroll('a[href*="#"]', { offset: 80, speed: 900 });
 
 
-  /** 3. Active Link 
+  /** 5. Active Link 
    **************************************************************** **/
   $(window).scroll(function () {
 
@@ -47,7 +57,7 @@ $(document).ready(function () {
     })
   })
 
-  /** 4. Navbar toggle icon  --> 
+  /** 6. Navbar toggle icon  --> 
  **************************************************************** **/
   $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
@@ -55,7 +65,7 @@ $(document).ready(function () {
 
 
 
-  /** 5. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. 
+  /** 7. Modal --> Keeps portfolio modals above the portfolio section. Need to finesse a little. 
  **************************************************************** **/
 
   $("body").on("click", ".modalClick", function () {
@@ -81,7 +91,7 @@ $(document).ready(function () {
   // $('#fiftyWhips').modal('toggle')
 
 
-  /** 6. Bootstrap Form Validation --> Do we need?
+  /** 8. Bootstrap Form Validation --> Do we need?
    **************************************************************** **/
 
   (function () {

@@ -88,7 +88,7 @@ $(document).ready(function () {
   });
 
   //The code below will allows the modal to stay open for design and editing. Just change the modal id. Comment out when finished.
-  // $('#fiftyWhips').modal('toggle')
+  // $('#sfmModal').modal('toggle')
 
 
   /** 8. Bootstrap Form Validation --> Do we need?

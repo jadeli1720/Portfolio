@@ -56,6 +56,10 @@ button {
   outline: 0;
 }
 
+code {
+  color:#00A1A7;
+}
+
 /**************GLOBAL CLASSES**************/
 .uppercase {
   text-transform: uppercase;
@@ -496,6 +500,7 @@ nav .nav-item {
   cursor: default;
 }
 
+
 /* Overlay */
 .hovereffect .overlay {
   background: rgba(0, 0, 0, 0.6); 
@@ -654,6 +659,10 @@ nav .nav-item {
   background-image: url("../images/leaf_overlay.png"), linear-gradient(to bottom,  #1b242f, #182632, #132834, #0d2b36, #052d37);
   overflow-x: hidden;
   padding: 0 16px;
+}
+
+.weatherImage{
+  width: 100%;
 }
 .modal-rel{
   position: absolute; 

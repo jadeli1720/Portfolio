@@ -251,12 +251,78 @@
             <h1 data-wow-duration="1s" data-wow-delay="1s" class=" wow fadeInDown text-center my-5 section-title">Portfolio</h1>
             <div class="section-margin">
                 <div class="container row  mx-auto">
-                    <!-- 1. CyberPunk Mud -->
+                    <!-- 1. Weatherify -->
+                    <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
+                        <div class="card ">
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="images/weatherify.png"
+                                    alt="Weather app picture" ">
+                                <div class="overlay">
+                                    <h4 class="text-center">Weatherify</h4>
+                                    <h6 class="text-center">Front End</h6>
+                                    <button class="modalClick" type ="button" data-toggle="modal" data-target="#weatherModal">Learn More</button>
+                                </div>
+                            </div>
+                        </div><!-- Card Ends -->
+                    </div>
+                    <!-- a. Weatherify Modal -->
+                    <div class="modal modal-rel fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="weatherifyLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="weatherifyLabel">Weatherify</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> 
+                                <!--End Header-->
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <div class="container-fluid modal-container">
+                                        <!-- Image -->
+                                        <div class="row">
+                                            <div class="col-md-12 text-center ">
+                                                <img class="weatherImage" src="images/weatherify.png" alt=" Weatherify App image">
+                                            </div>  
+                                        </div> <!-- End Image -->
+                                        <!-- Summary -->
+                                        <div class="row d-flex flex-column text-background p-4">
+                                            <div class="modal-heading ">
+                                                <h5>Weather Application</h5>
+                                                <p class= "modal-subheading font-weight-normal ">Tech Stack: <span class="font-weight-light font-italic light-teal">React, Moment & Moment-Timezone, react-bootstrap, Sass</span></p>
+                                            </div>
+                                            <!-- Description -->
+                                            <div class="modal-description px-4">
+                                                <p>Created as an ongoing and iterative project, the <a class="web-links" href="https://weather-app-teal.now.sh/" target="_blank">Weatherify App</a> allows users to check the current daily and weekly forecast of almost every city around the world. The <a href="https://openweathermap.org/" class="web-links" target="_blank">OpenWeather API</a> is being used to display data such as temperature, wind speed and direction, and humidity; while all icons are provided by the <a href="http://erikflowers.github.io/weather-icons/" class="web-links" target="_blank">Weather Icons </a> library.</p>
+                                                <ul class="pl-3 .modal-list">
+                                                    <li class="p-1" >Used Axios to fetch daily and weekly weather data from the api and combined in it into one call using the <code>.all() </code> method.</li>
+                                                    <li class="p-1">Using a timezone switch statement, I created a method that combines <a href="https://momentjs.com/" class="web-links">Moment</a> and <a href="https://momentjs.com/timezone/" class="web-links">Moment-Timezone</a> to dynamically change the background, application title, and icons based on the UTC Time, timezone, and weather condition code of the city as reported by the API.</li>
+                                                    <li class="p-1">Styled with Sass, the application uses bootstrap and <a href="https://react-bootstrap.github.io/" class="web-links" target="_blank">react-bootstrap</a>. Furthermore, all gradient backgrounds have been made using Adobe Illustrator</li>
+                                                    <li class="p-1">As the development of the application progress', I hope to improve on existing features, on the code itself by making it DRY, and to add more advanced features and styling. Please see the projects github repo below for more information.</li>
+                                                </ul>
+                                            </div><!-- End Description -->
+                                        </div><!-- End Summary -->
+                                    </div><!--End modal-container-->
+                                </div> <!--End Body-->
+                                <!-- Footer -->
+                                <div class="modal-footer ">
+                                    <a class="modal-btn mr-4" href="https://github.com/jadeli1720/weather-app" target="blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a class="modal-btn mr-4" href="https://weather-app-teal.now.sh/" target="blank">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </div> <!--End Footer-->
+                            </div> <!--End Modal Content-->
+                        </div>
+                    </div> <!--End Modal-->
+                    <!-- 2. CyberPunk Mud -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="images/cypberpunk.png"
-                                    alt="Safe Mothers Web app picture" ">
+                                    alt="Cyber Punk  app picture" ">
                                 <div class="overlay">
                                     <h4 class="text-center">CyberPunk Mud</h4>
                                     <h6 class="text-center">Full Stack</h6>
@@ -265,13 +331,13 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- a. CyberPunk Mud Modal -->
+                    <!-- b. CyberPunk Mud Modal -->
                     <div class="modal modal-rel fade" id="cbpmModal" tabindex="-1" role="dialog" aria-labelledby="cyberPunkLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
                                 <!-- Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title" id="safeMothersLabel">CyberPunk Mud</h4>
+                                    <h4 class="modal-title" id="cypberPunkLabel">CyberPunk Mud</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -317,7 +383,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 2. SafeMothers -->
+                    <!-- 3. SafeMothers -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -331,7 +397,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- b. SafeMothers Modal -->
+                    <!-- c. SafeMothers Modal -->
                     <div class="modal modal-rel fade" id="sfmModal" tabindex="-1" role="dialog" aria-labelledby="safeMothersLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -386,7 +452,7 @@
                         </div>
                     </div> <!--End Modal-->
                     
-                    <!-- 3. African Marketplace -->
+                    <!-- 4. African Marketplace -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -400,7 +466,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- c. African Marketplace Modal -->
+                    <!-- d. African Marketplace Modal -->
                     <div class="modal modal-rel fade" id="afMarket" tabindex="-1" role="dialog" aria-labelledby="africanMarketLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -451,7 +517,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 4. sleepmood -->
+                    <!-- 5. sleepmood -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -465,7 +531,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- d. sleepmood modal -->
+                    <!-- e. sleepmood modal -->
                     <div class="modal modal-rel fade" id="slpMood" tabindex="-1" role="dialog" aria-labelledby="sleepMoodeLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -516,7 +582,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 5. Rick & Morty  -->
+                    <!-- 6. Rick & Morty  -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -530,7 +596,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- e. Rick & Morty Modal -->
+                    <!-- f. Rick & Morty Modal -->
                     <div class="modal modal-rel fade" id="rickMorty" tabindex="-1" role="dialog" aria-labelledby="rickMortyLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -558,7 +624,7 @@
                                             </div>
                                             <!-- Description -->
                                             <div class="modal-description px-4">
-                                                <p>The Rick & Morty Universe app was to demonstrate my understanding of how to build a React Redux app and return data from an API of my choice. I chose to use the <a class="web-links" href="https://rickandmortyapi.com/" target="_blank" >Rick and Morty</a> API which displays characters, locations, and episodic data from the television series.</p>
+                                                <p>The Rick & Morty Universe app was created to demonstrate my understanding of how to build a React Redux app and return data from an API of my choice. I chose to use the <a class="web-links" href="https://rickandmortyapi.com/" target="_blank" >Rick and Morty</a> API which displays characters, locations, and episodic data from the television series.</p>
                                                 <ul class="pl-3 .modal-list">
                                                     <li class="p-1" >Used Axios to fetch the data from the API inside of an async action creator.</li>
                                                     <li class="p-1">Added the data from the API to the Redux store</li>
@@ -583,7 +649,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 6.  Wedding Gram -->
+                    <!-- 7.  Wedding Gram -->
                     <!-- Need to fix some of the site links -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -598,7 +664,7 @@
                             </div> 
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- f. Wedding Gram Modal -->
+                    <!-- g. Wedding Gram Modal -->
                     <div class="modal modal-rel fade" id="wedGram" tabindex="-1" role="dialog" aria-labelledby="wedGramLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -650,7 +716,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!--7. Bella Tea Room -->
+                    <!--8. Bella Tea Room -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
                             <div class="hovereffect">
@@ -664,7 +730,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div>
-                    <!-- g. Bella Tea Room -->
+                    <!-- h. Bella Tea Room Modal -->
                     <div class="modal modal-rel fade" id="belTeaRoom" tabindex="-1" role="dialog" aria-labelledby="belTeaRoomLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -713,7 +779,7 @@
                         </div>
                     </div> <!--End Modal-->
 
-                    <!-- 8. 5150whips -->
+                    <!-- 9. 5150whips -->
                     <!-- Free domain is not working. Will need to change hosting sites -->
                     <div data-wow-duration="1s" data-wow-delay="1.2s" class="wow flipInX col-md-4 col-sm-6 col-xs-12 port">
                         <div class="card ">
@@ -727,7 +793,7 @@
                             </div>
                         </div><!-- Card Ends -->
                     </div> <!-- Card Ends -->
-                    <!-- h. 5150whips Modal -->
+                    <!-- i. 5150whips Modal -->
                     <div class="modal modal-rel fade" id="fiftyWhips" tabindex="-1" role="dialog" aria-labelledby="5150WhipsLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                             <div class="modal-content">
@@ -770,7 +836,7 @@
                                     <!-- <a class="modal-btn mr-4" href="https://github.com/jadeli1720/React-Redux-App-2" target="blank">
                                         <i class="fab fa-github"></i>
                                     </a> -->
-                                    <a class="modal-btn mr-4" href="https://test5150site.000webhostapp.com/" target="blank">
+                                    <a class="modal-btn mr-4" href="https://fiftyonefiftytest.000webhostapp.com/index.html" target="blank">
                                         <i class="fas fa-external-link-square-alt"></i>
                                     </a>
                                 </div> <!--End Footer-->
@@ -790,8 +856,30 @@
                     <h2 data-wow-duration="1s" data-wow-delay="1.5s" class="wow fadeIn text-center card-title mt-5 ">Work</h2>
                     <div class="timeline-block mt-3">
                         <!-- 1 -->
-                        <div class="row no-gutters ">
+                        <div class="row no-gutters">
                             <div class="timeline"></div>
+                            <div class="col-md-3 col-sm-10 left-timeline">
+                                <div class=" card-body d-flex flex-column left-wrapper">
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">Viking Enterprise Solutions</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInLeftBig">Jun 2020 - Present</p>
+                                </div>
+                            </div>
+                            <div class="col-md-1 icon-timeline">
+                                <div data-wow-duration="1s" data-wow-delay=".5s" class="wow bounceIn icon-wrapper">
+                                    <i data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeIn fas fa-briefcase "></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 col-sm-10 right-timeline ">
+                                <div class=" card-body d-flex flex-column right-wrapper">
+                                    <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInRightBig">Front End Software Developer</h4>
+                                    <p data-wow-duration="1s" data-wow-delay=".6s" class="wow fadeInRightBig">Responsible for designing the user experience for various storage management applications and creating wireframes/mock-ups through the use of Adobe XD. While working within an Agile, Scrum, and collaborative environment, help team members to develop the UI for applications using HTML5, CSS, JavaScript, and other Javascript frameworks such as Angular and React.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="row no-gutters ">
                             <div class="col-md-3 col-sm-10 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
                                     <h4 data-wow-duration="1s" data-wow-delay=".5s" class="wow fadeInLeftBig">Riders For Life</h4>
@@ -812,7 +900,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 2 -->
+                        <!-- 3 -->
                         <div class="row no-gutters ">
                             <div class="col-md-3 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">
@@ -834,7 +922,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 3 -->
+                        <!-- 4 -->
                         <div class="row no-gutters ">
                             <div class="col-md-3 left-timeline ">
                                 <div class=" card-body d-flex flex-column left-wrapper ">
@@ -854,7 +942,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 4 -->
+                        <!-- 5 -->
                         <div class="row no-gutters ">
                             <div class="col-md-3 left-timeline">
                                 <div class=" card-body d-flex flex-column left-wrapper">

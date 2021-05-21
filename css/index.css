@@ -61,6 +61,7 @@ code {
 }
 
 /**************GLOBAL CLASSES**************/
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -477,10 +478,27 @@ nav .nav-item {
 /**************ABOUT**************/
   
 /**************SKILLS**************/
+.web-logo-container{
+  margin: 24px 30px;
+}
+.logo-container {
+  height: 100%;
+  max-height: 100px;
+}
+
+.web-icons {
+  margin: 25px auto;
+  width: 100%;
+  max-width: 100px;
+}
 
 .icons{
-  margin: 0px 16px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 100px;
 }
+
+
 
 /**************PORTFOLIO**************/
 
